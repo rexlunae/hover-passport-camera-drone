@@ -1,0 +1,63 @@
+.class interface abstract Lcom/zerozero/hover/newui/session/synchro/f$b;
+.super Ljava/lang/Object;
+.source "SessionSynchroContract.java"
+
+# interfaces
+.implements Lcom/zerozero/core/base/a/b;
+.implements Lcom/zerozero/hover/newui/session/sc/a/e$b;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/zerozero/hover/newui/session/synchro/f;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x608
+    name = "b"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/zerozero/core/base/a/b<",
+        "Lcom/zerozero/hover/newui/session/synchro/f$a;",
+        ">;",
+        "Lcom/zerozero/hover/newui/session/sc/a/e$b;"
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract a(Lcom/zerozero/hover/domain/Media;)V
+.end method
+
+.method public abstract a(Z)V
+.end method
+
+.method public abstract b(I)V
+.end method
+
+.method public abstract b(Lcom/zerozero/hover/domain/Media;)V
+.end method
+
+.method public abstract c()V
+.end method
+
+.method public abstract d(I)V
+.end method
+
+.method public abstract i()V
+.end method
+
+.method public abstract j()V
+.end method
+
+.method public abstract k()V
+.end method
+
+.method public abstract l()V
+.end method
+
+.method public abstract o()V
+.end method

@@ -1,0 +1,286 @@
+.class public Lcom/meiqia/meiqiasdk/third/photoview/b;
+.super Ljava/lang/Object;
+.source "DefaultOnDoubleTapListener.java"
+
+# interfaces
+.implements Landroid/view/GestureDetector$OnDoubleTapListener;
+
+
+# instance fields
+.field private a:Lcom/meiqia/meiqiasdk/third/photoview/d;
+
+
+# direct methods
+.method public constructor <init>(Lcom/meiqia/meiqiasdk/third/photoview/d;)V
+    .locals 0
+
+    .line 22
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 23
+    invoke-virtual {p0, p1}, Lcom/meiqia/meiqiasdk/third/photoview/b;->a(Lcom/meiqia/meiqiasdk/third/photoview/d;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Lcom/meiqia/meiqiasdk/third/photoview/d;)V
+    .locals 0
+
+    .line 32
+    iput-object p1, p0, Lcom/meiqia/meiqiasdk/third/photoview/b;->a:Lcom/meiqia/meiqiasdk/third/photoview/d;
+
+    return-void
+.end method
+
+.method public onDoubleTap(Landroid/view/MotionEvent;)Z
+    .locals 4
+
+    .line 72
+    iget-object v0, p0, Lcom/meiqia/meiqiasdk/third/photoview/b;->a:Lcom/meiqia/meiqiasdk/third/photoview/d;
+
+    if-nez v0, :cond_0
+
+    const/4 p1, 0x0
+
+    return p1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    .line 76
+    :try_start_0
+    iget-object v1, p0, Lcom/meiqia/meiqiasdk/third/photoview/b;->a:Lcom/meiqia/meiqiasdk/third/photoview/d;
+
+    invoke-virtual {v1}, Lcom/meiqia/meiqiasdk/third/photoview/d;->g()F
+
+    move-result v1
+
+    .line 77
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
+
+    move-result v2
+
+    .line 78
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
+
+    move-result p1
+
+    .line 80
+    iget-object v3, p0, Lcom/meiqia/meiqiasdk/third/photoview/b;->a:Lcom/meiqia/meiqiasdk/third/photoview/d;
+
+    invoke-virtual {v3}, Lcom/meiqia/meiqiasdk/third/photoview/d;->e()F
+
+    move-result v3
+
+    cmpg-float v3, v1, v3
+
+    if-gez v3, :cond_1
+
+    .line 81
+    iget-object v1, p0, Lcom/meiqia/meiqiasdk/third/photoview/b;->a:Lcom/meiqia/meiqiasdk/third/photoview/d;
+
+    iget-object v3, p0, Lcom/meiqia/meiqiasdk/third/photoview/b;->a:Lcom/meiqia/meiqiasdk/third/photoview/d;
+
+    invoke-virtual {v3}, Lcom/meiqia/meiqiasdk/third/photoview/d;->e()F
+
+    move-result v3
+
+    invoke-virtual {v1, v3, v2, p1, v0}, Lcom/meiqia/meiqiasdk/third/photoview/d;->a(FFFZ)V
+
+    goto :goto_0
+
+    .line 82
+    :cond_1
+    iget-object v3, p0, Lcom/meiqia/meiqiasdk/third/photoview/b;->a:Lcom/meiqia/meiqiasdk/third/photoview/d;
+
+    invoke-virtual {v3}, Lcom/meiqia/meiqiasdk/third/photoview/d;->e()F
+
+    move-result v3
+
+    cmpl-float v3, v1, v3
+
+    if-ltz v3, :cond_2
+
+    iget-object v3, p0, Lcom/meiqia/meiqiasdk/third/photoview/b;->a:Lcom/meiqia/meiqiasdk/third/photoview/d;
+
+    invoke-virtual {v3}, Lcom/meiqia/meiqiasdk/third/photoview/d;->f()F
+
+    move-result v3
+
+    cmpg-float v1, v1, v3
+
+    if-gez v1, :cond_2
+
+    .line 83
+    iget-object v1, p0, Lcom/meiqia/meiqiasdk/third/photoview/b;->a:Lcom/meiqia/meiqiasdk/third/photoview/d;
+
+    iget-object v3, p0, Lcom/meiqia/meiqiasdk/third/photoview/b;->a:Lcom/meiqia/meiqiasdk/third/photoview/d;
+
+    invoke-virtual {v3}, Lcom/meiqia/meiqiasdk/third/photoview/d;->f()F
+
+    move-result v3
+
+    invoke-virtual {v1, v3, v2, p1, v0}, Lcom/meiqia/meiqiasdk/third/photoview/d;->a(FFFZ)V
+
+    goto :goto_0
+
+    .line 85
+    :cond_2
+    iget-object v1, p0, Lcom/meiqia/meiqiasdk/third/photoview/b;->a:Lcom/meiqia/meiqiasdk/third/photoview/d;
+
+    iget-object v3, p0, Lcom/meiqia/meiqiasdk/third/photoview/b;->a:Lcom/meiqia/meiqiasdk/third/photoview/d;
+
+    invoke-virtual {v3}, Lcom/meiqia/meiqiasdk/third/photoview/d;->d()F
+
+    move-result v3
+
+    invoke-virtual {v1, v3, v2, p1, v0}, Lcom/meiqia/meiqiasdk/third/photoview/d;->a(FFFZ)V
+    :try_end_0
+    .catch Ljava/lang/ArrayIndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    :goto_0
+    return v0
+.end method
+
+.method public onDoubleTapEvent(Landroid/view/MotionEvent;)Z
+    .locals 0
+
+    const/4 p1, 0x0
+
+    return p1
+.end method
+
+.method public onSingleTapConfirmed(Landroid/view/MotionEvent;)Z
+    .locals 6
+
+    .line 37
+    iget-object v0, p0, Lcom/meiqia/meiqiasdk/third/photoview/b;->a:Lcom/meiqia/meiqiasdk/third/photoview/d;
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    return v1
+
+    .line 40
+    :cond_0
+    iget-object v0, p0, Lcom/meiqia/meiqiasdk/third/photoview/b;->a:Lcom/meiqia/meiqiasdk/third/photoview/d;
+
+    invoke-virtual {v0}, Lcom/meiqia/meiqiasdk/third/photoview/d;->c()Landroid/widget/ImageView;
+
+    move-result-object v0
+
+    .line 42
+    iget-object v2, p0, Lcom/meiqia/meiqiasdk/third/photoview/b;->a:Lcom/meiqia/meiqiasdk/third/photoview/d;
+
+    invoke-virtual {v2}, Lcom/meiqia/meiqiasdk/third/photoview/d;->i()Lcom/meiqia/meiqiasdk/third/photoview/d$d;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_2
+
+    .line 43
+    iget-object v2, p0, Lcom/meiqia/meiqiasdk/third/photoview/b;->a:Lcom/meiqia/meiqiasdk/third/photoview/d;
+
+    invoke-virtual {v2}, Lcom/meiqia/meiqiasdk/third/photoview/d;->b()Landroid/graphics/RectF;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_2
+
+    .line 46
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
+
+    move-result v3
+
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
+
+    move-result v4
+
+    .line 49
+    invoke-virtual {v2, v3, v4}, Landroid/graphics/RectF;->contains(FF)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_1
+
+    .line 51
+    iget p1, v2, Landroid/graphics/RectF;->left:F
+
+    sub-float/2addr v3, p1
+
+    .line 52
+    invoke-virtual {v2}, Landroid/graphics/RectF;->width()F
+
+    move-result p1
+
+    div-float/2addr v3, p1
+
+    .line 53
+    iget p1, v2, Landroid/graphics/RectF;->top:F
+
+    sub-float/2addr v4, p1
+
+    .line 54
+    invoke-virtual {v2}, Landroid/graphics/RectF;->height()F
+
+    move-result p1
+
+    div-float/2addr v4, p1
+
+    .line 56
+    iget-object p1, p0, Lcom/meiqia/meiqiasdk/third/photoview/b;->a:Lcom/meiqia/meiqiasdk/third/photoview/d;
+
+    invoke-virtual {p1}, Lcom/meiqia/meiqiasdk/third/photoview/d;->i()Lcom/meiqia/meiqiasdk/third/photoview/d$d;
+
+    move-result-object p1
+
+    invoke-interface {p1, v0, v3, v4}, Lcom/meiqia/meiqiasdk/third/photoview/d$d;->a(Landroid/view/View;FF)V
+
+    const/4 p1, 0x1
+
+    return p1
+
+    .line 59
+    :cond_1
+    iget-object v2, p0, Lcom/meiqia/meiqiasdk/third/photoview/b;->a:Lcom/meiqia/meiqiasdk/third/photoview/d;
+
+    invoke-virtual {v2}, Lcom/meiqia/meiqiasdk/third/photoview/d;->i()Lcom/meiqia/meiqiasdk/third/photoview/d$d;
+
+    move-result-object v2
+
+    invoke-interface {v2}, Lcom/meiqia/meiqiasdk/third/photoview/d$d;->a()V
+
+    .line 63
+    :cond_2
+    iget-object v2, p0, Lcom/meiqia/meiqiasdk/third/photoview/b;->a:Lcom/meiqia/meiqiasdk/third/photoview/d;
+
+    invoke-virtual {v2}, Lcom/meiqia/meiqiasdk/third/photoview/d;->j()Lcom/meiqia/meiqiasdk/third/photoview/d$g;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_3
+
+    .line 64
+    iget-object v2, p0, Lcom/meiqia/meiqiasdk/third/photoview/b;->a:Lcom/meiqia/meiqiasdk/third/photoview/d;
+
+    invoke-virtual {v2}, Lcom/meiqia/meiqiasdk/third/photoview/d;->j()Lcom/meiqia/meiqiasdk/third/photoview/d$g;
+
+    move-result-object v2
+
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
+
+    move-result v3
+
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
+
+    move-result p1
+
+    invoke-interface {v2, v0, v3, p1}, Lcom/meiqia/meiqiasdk/third/photoview/d$g;->a(Landroid/view/View;FF)V
+
+    :cond_3
+    return v1
+.end method
