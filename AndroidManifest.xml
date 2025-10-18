@@ -43,7 +43,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android.launchMode="singleTask" android:name="com.zerozero.hover.newui.home.HomeActivity" android:screenOrientation="nosensor" android:theme="@style/SplashTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.zerozero.hover.newui.home.HomeActivity" android:screenOrientation="nosensor" android:theme="@style/SplashTheme" android:windowSoftInputMode="adjustResize"/>
         <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.zerozero.hover.newui.session.show.SessionShowActivity" android:screenOrientation="portrait" android:theme="@style/FullScreen"/>
         <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.zerozero.hover.newui.session.synchro.SessionSynchroActivity" android:screenOrientation="portrait" android:theme="@style/FullScreen"/>
         <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.zerozero.hover.newui.session.end.SessionEndActivity" android:screenOrientation="portrait" android:theme="@style/FullScreen"/>
