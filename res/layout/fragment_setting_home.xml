@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout style="@style/SettingsItemTitleFrame">
+            <TextView android:text="@string/setting_title_general" style="@style/SettingsItemTitle" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/btn_setting_about" style="@style/SettingsItemFrameStyle">
+            <TextView android:text="@string/setting_title_about" style="@style/SettingsItemStyle" />
+            <ImageView style="@style/SettingsItemRightIconStyle" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/btn_setting_firmware_update" style="@style/SettingsItemFrameStyle">
+            <LinearLayout android:layout_gravity="start|center" android:orientation="horizontal" android:background="@android:color/transparent" android:paddingTop="@dimen/setting_item_padding_top_and_bottom" android:paddingBottom="@dimen/setting_item_padding_top_and_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/setting_title_firmware_update" style="@style/SettingsItemStyle" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/icon_new_firmware" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:src="@drawable/icon_update_available" android:layout_marginStart="8.0dip" />
+            </LinearLayout>
+            <ImageView style="@style/SettingsItemRightIconStyle" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/btn_setting_memory" style="@style/SettingsItemFrameStyle">
+            <TextView android:text="@string/setting_title_memory" style="@style/SettingsItemStyle" />
+            <ImageView style="@style/SettingsItemRightIconStyle" />
+        </FrameLayout>
+        <FrameLayout style="@style/SettingsItemTitleFrame">
+            <TextView android:text="@string/setting_title_setting" style="@style/SettingsItemTitle" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/btn_setting_auto_filter" android:visibility="gone" style="@style/SettingsItemFrameStyle">
+            <Switch android:textSize="16.0sp" android:textColor="@color/whole_white" android:layout_gravity="end|center" android:id="@id/setting_auto_filter_switch" android:background="@color/whole_black" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:thumb="@drawable/switch_thumb_selector" android:text="@string/setting_title_auto_filter" android:track="@drawable/switch_track_selector" android:layout_marginStart="48.0dip" android:layout_marginEnd="16.0dip" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/btn_setting_owner_mode" style="@style/SettingsItemFrameStyle">
+            <LinearLayout android:layout_gravity="start|center" android:orientation="horizontal" android:background="@android:color/transparent" android:paddingTop="@dimen/setting_item_padding_top_and_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/setting_owner_mode" style="@style/SettingsItemStyle" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/icon_new_owner_mode" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:src="@drawable/icon_update_available" android:layout_marginStart="8.0dip" />
+            </LinearLayout>
+            <ImageView style="@style/SettingsItemRightIconStyle" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/btn_setting_control_mode" style="@style/SettingsItemFrameStyle">
+            <LinearLayout android:layout_gravity="start|center" android:orientation="horizontal" android:background="@android:color/transparent" android:paddingTop="@dimen/setting_item_padding_top_and_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/camera_setting_control_mode" style="@style/SettingsItemStyle" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/icon_new_control_mode" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:src="@drawable/icon_update_available" android:layout_marginStart="8.0dip" />
+            </LinearLayout>
+            <ImageView style="@style/SettingsItemRightIconStyle" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/btn_setting_beast_mode" android:visibility="gone" style="@style/SettingsItemFrameStyle">
+            <TextView android:text="@string/setting_title_beast_mode" style="@style/SettingsItemStyle" />
+            <ImageView style="@style/SettingsItemRightIconStyle" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/btn_setting_video" android:paddingTop="@dimen/setting_item_padding_top_and_bottom" style="@style/SettingsItemFrameStyle">
+            <TextView android:text="@string/setting_title_video" style="@style/SettingsItemStyle" />
+            <ImageView style="@style/SettingsItemRightIconStyle" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/btn_setting_watermark" android:paddingTop="@dimen/setting_item_padding_top_and_bottom" style="@style/SettingsItemFrameStyle">
+            <TextView android:text="@string/setting_title_watermark" style="@style/SettingsItemStyle" />
+            <ImageView style="@style/SettingsItemRightIconStyle" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/btn_setting_download_background" style="@style/SettingsItemFrameStyle">
+            <LinearLayout android:layout_gravity="start|center" android:orientation="horizontal" android:background="@android:color/transparent" android:paddingTop="@dimen/setting_item_padding_top_and_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/setting_title_update" style="@style/SettingsItemStyle" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/icon_new_app" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:src="@drawable/icon_update_available" android:layout_marginStart="8.0dip" />
+            </LinearLayout>
+            <ImageView style="@style/SettingsItemRightIconStyle" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/btn_setting_connection" android:paddingTop="@dimen/setting_item_padding_top_and_bottom" style="@style/SettingsItemFrameStyle">
+            <TextView android:text="@string/setting_title_connection" style="@style/SettingsItemStyle" />
+            <ImageView style="@style/SettingsItemRightIconStyle" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/btn_setting_calibrate" android:paddingTop="@dimen/setting_item_padding_top_and_bottom" style="@style/SettingsItemFrameStyle">
+            <LinearLayout android:layout_gravity="start|center" android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/calibrate_sensor" style="@style/SettingsItemStyle" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/icon_need_calibrate" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:src="@drawable/icon_update_available" android:layout_marginStart="8.0dip" />
+            </LinearLayout>
+            <ImageView style="@style/SettingsItemRightIconStyle" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/btn_setting_factory_reset" android:paddingTop="@dimen/setting_item_padding_top_and_bottom" style="@style/SettingsItemFrameStyle">
+            <TextView android:text="@string/setting_title_factory_reset" style="@style/SettingsItemStyle" />
+            <ImageView style="@style/SettingsItemRightIconStyle" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/btn_setting_clear_video_clips" android:paddingTop="@dimen/setting_item_padding_top_and_bottom" android:visibility="gone" style="@style/SettingsItemFrameStyle">
+            <TextView android:layout_width="wrap_content" android:text="@string/setting_others_clear_cache" style="@style/SettingsItemStyle" />
+            <TextView android:id="@id/tv_clips_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="24.0dip" android:layout_alignParentEnd="true" style="@style/SettingsItemStyle" />
+        </RelativeLayout>
+        <FrameLayout style="@style/SettingsItemTitleFrame">
+            <TextView android:text="@string/setting_title_support" style="@style/SettingsItemTitle" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/btn_setting_help_center" style="@style/SettingsItemFrameStyle">
+            <TextView android:text="@string/setting_title_help_center" style="@style/SettingsItemStyle" />
+            <ImageView style="@style/SettingsItemRightIconStyle" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/btn_setting_support_feedback" style="@style/SettingsItemFrameStyle">
+            <TextView android:text="@string/setting_title_support_feedback" style="@style/SettingsItemStyle" />
+            <ImageView style="@style/SettingsItemRightIconStyle" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/btn_setting_tutorial" style="@style/SettingsItemFrameStyle">
+            <TextView android:text="@string/setting_title_tutorial" style="@style/SettingsItemStyle" />
+            <ImageView style="@style/SettingsItemRightIconStyle" />
+        </FrameLayout>
+        <FrameLayout style="@style/SettingsItemTitleFrame">
+            <TextView style="@style/SettingsItemTitle" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/whole_black" android:paddingTop="@dimen/setting_item_padding_top_and_bottom" android:paddingBottom="@dimen/setting_item_padding_top_and_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/setting_home_social_network_margin_lr">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/spacer_medium" android:showDividers="middle" android:layout_marginStart="@dimen/setting_home_social_network_margin_lr" android:layout_marginEnd="@dimen/setting_home_social_network_margin_lr">
+                <ImageView android:id="@id/btn_setting_social_facebook" android:layout_width="@dimen/setting_home_social_network_height" android:layout_height="@dimen/setting_home_social_network_height" android:src="@mipmap/n5_icon_settings_social_facebook" />
+                <ImageView android:id="@id/btn_setting_social_twitter" android:layout_width="@dimen/setting_home_social_network_height" android:layout_height="@dimen/setting_home_social_network_height" android:src="@mipmap/n5_icon_settings_social_twitter" />
+                <ImageView android:id="@id/btn_setting_social_instagrm" android:layout_width="@dimen/setting_home_social_network_height" android:layout_height="@dimen/setting_home_social_network_height" android:src="@mipmap/n5_icon_settings_social_instagram" />
+                <ImageView android:id="@id/btn_setting_social_wechat" android:layout_width="@dimen/setting_home_social_network_height" android:layout_height="@dimen/setting_home_social_network_height" android:src="@mipmap/n5_icon_settings_social_wechat" />
+                <ImageView android:id="@id/btn_setting_social_weibo" android:layout_width="@dimen/setting_home_social_network_height" android:layout_height="@dimen/setting_home_social_network_height" android:src="@mipmap/n5_icon_settings_social_weibo" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

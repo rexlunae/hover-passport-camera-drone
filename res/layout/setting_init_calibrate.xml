@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/calibrate_init_layout" android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/setting_calibrate_img" android:layout_width="fill_parent" android:layout_height="269.0dip" android:layout_marginTop="32.0dip" android:src="@mipmap/n5_pic_settings_calibrate_spread" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/whole_white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/keep_hover_camera_powered_on" android:layout_marginStart="38.0dip" android:layout_marginEnd="38.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/whole_white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/place_hover_on_flat_surface" android:layout_marginStart="38.0dip" android:layout_marginEnd="38.0dip" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/btn_go_calibrate" android:layout_marginTop="10.0dip" android:text="@string/extractor_start" style="@style/SettingBottomButtonStyle" />
+    </FrameLayout>
+</LinearLayout>

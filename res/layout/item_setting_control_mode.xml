@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/container_control_mode" android:background="@drawable/bg_setting_control_mode" android:layout_width="328.0dip" android:layout_height="122.0dip" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/setting_control_img" android:layout_width="140.0dip" android:layout_height="74.0dip" android:layout_marginLeft="24.0dip" android:src="@mipmap/n5_icon_settings_control_classic_selected" android:layout_centerVertical="true" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/setting_control_img">
+            <TextView android:textSize="17.0sp" android:textColor="@color/color_66ffffff" android:layout_gravity="center" android:id="@id/setting_control_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fly_control_picker_classic" />
+        </FrameLayout>
+        <ImageView android:id="@id/control_select_circle" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:src="@mipmap/n5_btn_settings_memory_select_circle_selected" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="70.0dip" android:paddingBottom="60.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="25.0dip" android:paddingEnd="25.0dip">
+        <TextView android:id="@id/txt_check_page_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" style="@style/TxtStyleSize24" />
+        <TextView android:id="@id/txt_check_page_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:maxLines="4" style="@style/TxtStyleSize16" />
+        <RelativeLayout android:gravity="center" android:id="@id/container_check_page" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:layout_gravity="center" android:id="@id/txt_check_page_btn_ok" android:background="@drawable/selector_btn_long_new" android:clickable="true" android:layout_width="wrap_content" android:layout_height="45.0dip" android:text="@string/check_page_confirm_btn" style="@style/TxtStyleSize18" />
+        <RelativeLayout android:id="@id/layout_check_page_btn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <View android:id="@id/view_check_btn" android:layout_width="10.0dip" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+            <TextView android:id="@id/txt_check_page_btn_left" android:background="@drawable/selector_btn_short_new" android:clickable="true" android:layout_width="wrap_content" android:layout_height="45.0dip" android:text="@string/ok" android:layout_toStartOf="@id/view_check_btn" style="@style/TxtStyleSize18" />
+            <TextView android:id="@id/txt_check_page_btn_right" android:background="@drawable/selector_btn_short_new" android:clickable="true" android:layout_width="wrap_content" android:layout_height="45.0dip" android:text="@string/ok" android:layout_toEndOf="@id/view_check_btn" style="@style/TxtStyleSize18" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

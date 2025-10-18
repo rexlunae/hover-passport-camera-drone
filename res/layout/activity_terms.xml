@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@mipmap/iv_bg_terms" android:paddingLeft="26.0dip" android:paddingRight="26.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="30.0dip" android:paddingTop="88.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/ll_bottom_btn" android:layout_alignParentTop="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_terms_logo" />
+        <TextView android:textSize="27.0sp" android:textStyle="bold" android:textColor="@color/whole_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="117.0dip" android:text="@string/your_next_journey_starts_here" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_4Dffffff" android:id="@id/tvTermsIntro" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:lineSpacingExtra="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_bottom_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="34.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="34.0dip" android:layout_marginBottom="30.0dip" android:layout_alignParentBottom="true">
+        <Button android:textSize="20.0sp" android:textColor="@color/whole_white" android:background="@drawable/btn_white_border" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/accept" android:onClick="acceptTerms" android:textAllCaps="false" style="?android:attr/borderlessButtonStyle" />
+        <Button android:textSize="20.0sp" android:textColor="@color/color_4Dffffff" android:id="@id/btnCloseTerms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/close" android:lineSpacingExtra="5.0dip" android:onClick="closeTerms" android:alpha="0.6" android:textAllCaps="false" style="?android:attr/borderlessButtonStyle" />
+    </LinearLayout>
+</RelativeLayout>

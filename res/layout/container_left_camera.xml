@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/left_control_camera" android:background="@color/whole_black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/left_black_background" android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+        <FrameLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/btn_camera_shutter">
+            <include layout="@layout/camera_close_view" />
+        </FrameLayout>
+        <ImageView android:id="@id/btn_camera_shutter" android:clickable="true" android:layout_width="67.0dip" android:layout_height="67.0dip" android:src="@drawable/btn_shutter_photo" android:scaleType="centerInside" android:layout_centerInParent="true" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_below="@id/btn_camera_shutter">
+            <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@id/camera_capture_countdown" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@drawable/btn_camera_setting_countdown_0s" android:layout_centerInParent="true" />
+                <TextView android:gravity="center" android:id="@id/tv_countDown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_left_timer" android:layout_below="@id/camera_capture_countdown" android:layout_centerHorizontal="true" style="@style/PreviewIconTxt" />
+            </RelativeLayout>
+            <FrameLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+                <include layout="@layout/camera_land_view" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

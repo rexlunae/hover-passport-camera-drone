@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout style="@style/SettingsItemTitleFrame">
+        <TextView android:text="@string/setting_connection_frequency_band_inside" style="@style/SettingsFeedbackItemTitleText" />
+    </FrameLayout>
+    <ListView android:id="@id/list_view_FrequencyBand" android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="false" android:divider="@color/setting_home_title_background" android:dividerHeight="0.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <ImageView style="@style/SettingsDividerView" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/setting_connection_warning_text_color" android:text="@string/setting_connection_frequency_band_warning" style="@style/SettingFrequencyTextView" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/whole_white" android:text="@string/setting_connection_frequency_band_make_sure" style="@style/SettingFrequencyTextView" />
+        <TextView android:text="@string/setting_connection_frequency_band_warning_details" android:lineSpacingMultiplier="1.2" style="@style/SettingFrequencyTextView" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:id="@id/setting_wifi_change" android:text="@string/btn_confirm" style="@style/SettingBottomButtonStyle" />
+    </FrameLayout>
+</LinearLayout>

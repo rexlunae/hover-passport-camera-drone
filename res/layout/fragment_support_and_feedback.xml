@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout style="@style/SettingsFeedbackItemTitle">
+        <TextView android:text="@string/setting_support_and_feedback_name" style="@style/SettingsFeedbackItemTitleText" />
+    </FrameLayout>
+    <FrameLayout style="@style/SettingsFeedbackItemTitle">
+        <EditText android:id="@id/setting_support_and_feedback_name" android:hint="@string/setting_support_and_feedback_name_hint" android:maxLines="1" style="@style/SettingsEditText" />
+        <ImageView android:id="@id/name_pruge" android:visibility="gone" style="@style/SettingsEditPruge" />
+    </FrameLayout>
+    <ImageView style="@style/SettingsDividerView" />
+    <FrameLayout style="@style/SettingsFeedbackItemTitle">
+        <TextView android:text="@string/setting_support_and_feedback_email" style="@style/SettingsFeedbackItemTitleText" />
+    </FrameLayout>
+    <FrameLayout style="@style/SettingsFeedbackItemTitle">
+        <EditText android:id="@id/setting_support_and_feedback_email" android:hint="@string/setting_support_and_feedback_email_hint" android:maxLines="1" android:inputType="textEmailAddress" style="@style/SettingsEditText" />
+        <ImageView android:id="@id/email_pruge" android:visibility="gone" style="@style/SettingsEditPruge" />
+    </FrameLayout>
+    <ImageView style="@style/SettingsDividerView" />
+    <FrameLayout style="@style/SettingsFeedbackItemTitle">
+        <TextView android:text="@string/setting_support_and_feedback_description" style="@style/SettingsFeedbackItemTitleText" />
+        <LinearLayout android:layout_gravity="end|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10.0dip">
+            <TextView android:textColor="@color/setting_home_title_text_color" android:gravity="center" android:id="@id/setting_support_and_feedback_words_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="600" android:paddingEnd="4.0dip" />
+            <TextView android:textColor="@color/setting_home_title_text_color" android:gravity="center" android:layout_gravity="end" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="left" />
+        </LinearLayout>
+    </FrameLayout>
+    <EditText android:gravity="top" android:id="@id/setting_support_and_feedback_description" android:hint="@string/setting_support_and_feedback_description_hint" android:maxLength="600" android:layout_weight="1.0" style="@style/SettingsEditText" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/setting_support_and_feedback_submit" android:text="@string/setting_support_and_feedback_submit" style="@style/SettingBottomButtonStyle" />
+    </FrameLayout>
+</LinearLayout>

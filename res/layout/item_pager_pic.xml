@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <uk.co.senab.photoview.PhotoView android:layout_gravity="center" android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/video_layout" android:background="@color/video_bg_color" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="220.0dip" android:layout_centerInParent="true">
+        <com.zerozero.hover.videoeditor.view.fullvideoview.UniversalVideoView android:layout_gravity="center" android:id="@id/videoView" android:layout_width="fill_parent" android:layout_height="fill_parent" app:uvv_fitXY="true" app:uvv_centerCrop="true" app:uvv_autoRotation="true" />
+        <ImageView android:id="@id/iv_video_preview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_alignLeft="@id/videoView" android:layout_alignTop="@id/videoView" android:layout_alignRight="@id/videoView" android:layout_alignBottom="@id/videoView" android:layout_alignStart="@id/videoView" android:layout_alignEnd="@id/videoView" />
+        <com.zerozero.hover.videoeditor.view.fullvideoview.UniversalMediaController android:id="@id/media_controller" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentStart="true" app:uvv_scalable="true" />
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/progress_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="30.0sp" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@id/text_download_progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ProgressBar android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="@dimen/progress_bar_height" android:layout_margin="10.0dip" android:progressDrawable="@drawable/progress_bar_white" style="?android:attr/progressBarStyleHorizontal" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/icon_video_download" android:visibility="gone" android:layout_width="@dimen/icon_play" android:layout_height="@dimen/icon_play" android:src="@mipmap/album_download_video_large" android:layout_centerInParent="true" />
+    <TextView android:textColor="@color/whole_white" android:layout_gravity="bottom" android:id="@id/text_preview_video_hint" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="60.0dip" android:text="@string/preview_video_hint" android:layout_alignParentBottom="true" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+</RelativeLayout>

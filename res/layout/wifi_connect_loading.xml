@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/wifi_camera_loading_container" android:background="@color/transparent_black_loading" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zerozero.hover.view.widget.BlurringView android:id="@id/wifi_blurringView" android:layout_width="fill_parent" android:layout_height="fill_parent" app:blurRadius="12" app:downsampleFactor="8" app:overlayColor="#335d5d5d" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/wifi_loading_animation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_camera_loading" android:contentDescription="@null" />
+        <TextView android:id="@id/text_wifi_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/connecting_text" style="@style/TxtStyleSize18" />
+    </LinearLayout>
+</FrameLayout>

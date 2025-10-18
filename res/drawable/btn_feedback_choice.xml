@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@android:color/white" />
+            <stroke android:width="0.8000001dip" android:color="@color/setting_support_and_feedback_choice_button_border_color" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@android:color/transparent" />
+            <stroke android:width="@dimen/btn_border_width" android:color="@color/setting_support_and_feedback_choice_button_border_color" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/panel_fly_control" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="50.0dip" android:layout_toRightOf="@id/left_control" android:layout_alignParentRight="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/fly_joystick_left_circle" android:layout_width="160.0dip" android:layout_height="160.0dip" android:src="@drawable/bg_joystick_circle" />
+    <ImageView android:id="@id/btn_fly_joystick_left" android:layout_width="@dimen/fly_controller_joystick_height" android:layout_height="@dimen/fly_controller_joystick_height" android:src="@drawable/icon_fly_joystick" />
+    <ImageView android:id="@id/fly_joystick_right_circle" android:layout_width="160.0dip" android:layout_height="160.0dip" android:src="@drawable/bg_joystick_circle" />
+    <ImageView android:id="@id/btn_fly_joystick_right" android:layout_width="@dimen/fly_controller_joystick_height" android:layout_height="@dimen/fly_controller_joystick_height" android:src="@drawable/icon_fly_joystick" />
+    <FrameLayout android:id="@id/container_fly_control_up_down" android:background="@mipmap/n5_btn_camera_control_videos_up_whole" android:layout_width="60.0dip" android:layout_height="176.0dip" android:layout_marginLeft="16.0dip" android:layout_marginBottom="24.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <View android:id="@id/fly_control_slider" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/btn_fly_control_up_down" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/btn_control_videos_mid" />
+    </FrameLayout>
+    <include layout="@layout/container_fly_right_classic" />
+    <FrameLayout android:id="@id/container_motion_up_down" android:background="@mipmap/n5_bg_camera_motion_slider" android:layout_width="56.0dip" android:layout_height="160.0dip" android:layout_marginLeft="16.0dip" android:layout_marginBottom="16.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <View android:id="@id/pic_motion_slider" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/btn_motion_up_down" android:layout_width="36.0dip" android:layout_height="20.0dip" android:src="@mipmap/n5_btn_camera_motion_indicate" />
+    </FrameLayout>
+    <ImageView android:id="@id/btn_fly_motion" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:src="@drawable/icon_fly_motion" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/video_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center" android:id="@id/layout_surface_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.zerozero.core.uiview.scalevideoview.ScalableVideoView android:id="@id/videoView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentStart="true" app:scalableType="centerCrop" />
+        <ImageView android:id="@id/imgVideo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_alignTop="@id/videoView" android:layout_alignBottom="@id/videoView" />
+        <ImageView android:id="@id/icon_video_play" android:background="@drawable/play_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/rl_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="19.0dip">
+            <SeekBar android:id="@id/handlerTop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="0.0dip" android:maxHeight="2.0dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/bg_seekbar" android:minHeight="2.0dip" android:thumb="@drawable/white_dot" />
+            <RelativeLayout android:id="@id/timeText" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@android:color/white" android:id="@id/textSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+                <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/textTimeSelection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/textTime" android:layout_toRightOf="@id/textSize" android:layout_toStartOf="@id/textTime" android:layout_toEndOf="@id/textSize" />
+                <TextView android:textColor="@android:color/white" android:id="@id/textTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_time_part" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="24.0dip" android:layout_below="@id/rl_progress">
+            <TextView android:textColor="@color/video_progress_white_color" android:id="@id/tv_time_pass" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:layout_alignParentLeft="true" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <TextView android:textColor="@color/video_progress_white_color" android:id="@id/tv_end_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_toLeftOf="@id/tv_time_total" />
+                <TextView android:textColor="@color/video_progress_white_color" android:id="@id/tv_time_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_below="@id/rl_time_part">
+            <android.support.v7.widget.RecyclerView android:id="@id/videoFrames" android:paddingLeft="40.0dip" android:paddingRight="40.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_centerInParent="true" />
+            <com.zerozero.hover.videoeditor.view.rangeslider.NewRangeSlider android:id="@id/range_slider" android:layout_width="fill_parent" android:layout_height="72.0dip" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:layout_centerInParent="true" app:lineHeight="1.0dip" app:thumbWidth="16.0dip" app:lineColor="@android:color/white" app:maskColor="@color/video_shadow_color" app:tickCount="1000" app:leftThumbIndex="0" app:leftThumbDrawable="@mipmap/n4_btn_album_videos_edit_cut_slider" app:rightThumbDrawable="@mipmap/n4_btn_album_videos_edit_cut_slider" />
+            <ImageView android:id="@id/playing_indicator" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="36.0dip" android:src="@mipmap/ic_video_frames_indicator" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zz.combine.view.RectFrameLayout android:tag="layout/item_sc_video_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="7.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/sc_creating" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/tip_img" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/sc_video_editing" android:layout_centerInParent="true" />
+        <TextView android:id="@id/tip_text" android:layout_marginTop="6.0dip" android:text="@string/session_combine_creating" android:layout_below="@id/tip_img" android:layout_centerHorizontal="true" style="@style/session_combine_tip_text" />
+    </RelativeLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <RelativeLayout android:id="@id/sc_control" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="@drawable/bg_gradient_sc" android:layout_width="fill_parent" android:layout_height="26.0dip" android:layout_alignParentBottom="true" />
+        <TextView android:id="@id/duration" android:layout_marginLeft="8.0dip" android:layout_marginBottom="5.0dip" android:text="08:59" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" style="@style/sessionCombineCorner" />
+        <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/sc_small_video" android:layout_alignBottom="@id/duration" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.zz.combine.view.RectProgressView android:id="@id/progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="right|top" android:id="@id/iv_checked" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="6.0dip" android:src="@drawable/ic_item_checked" android:contentDescription="@null" />
+</com.zz.combine.view.RectFrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="251.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="251.0dip" android:src="@mipmap/n5_pic_home_connect_wifi" android:scaleType="center" android:layout_centerInParent="true" android:contentDescription="@null" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="251.0dip" android:weightSum="150.0">
+        <View android:id="@id/view" android:layout_weight="42.0" style="@style/ItemInOwnerTutorialPageStyle" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/whole_black" android:gravity="center" android:text="@string/check_page_wifi_imv_txt" android:layout_weight="14.0" style="@style/ItemInOwnerTutorialPageStyle" />
+        <View android:layout_weight="6.0" style="@style/ItemInOwnerTutorialPageStyle" />
+        <LinearLayout android:orientation="horizontal" android:layout_weight="17.0" style="@style/ItemInOwnerTutorialPageStyle">
+            <TextView android:textSize="11.0sp" android:textColor="@color/whole_black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/check_page_wifi_imv_txt" android:paddingEnd="120.0dip" />
+        </LinearLayout>
+        <View android:layout_weight="8.0" style="@style/ItemInOwnerTutorialPageStyle" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/whole_white" android:gravity="center" android:text="@string/check_page_wifi_imv_wifi" android:maxLines="1" android:layout_weight="23.0" style="@style/ItemInOwnerTutorialPageStyle" />
+        <View android:layout_weight="7.0" style="@style/ItemInOwnerTutorialPageStyle" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/whole_white" android:gravity="center" android:text="@string/check_page_wifi_imv_pwd" android:maxLines="1" android:layout_weight="23.0" style="@style/ItemInOwnerTutorialPageStyle" />
+    </LinearLayout>
+</RelativeLayout>

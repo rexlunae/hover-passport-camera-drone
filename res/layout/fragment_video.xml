@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80.0dip" android:contentDescription="Just for test">
+        <Button android:id="@id/btn_play_raw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="播放原声" android:layout_marginEnd="10.0dip" />
+        <Button android:id="@id/btn_play_clean" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="播放降噪后的声音" android:layout_marginEnd="10.0dip" />
+        <Button android:id="@id/btn_stop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="停止播放" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/image" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+        <FrameLayout android:id="@id/fl_download" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignLeft="@id/image" android:layout_alignRight="@id/image" android:layout_centerInParent="true">
+            <com.zerozero.hover.newui.session.synchro.RecProgressView android:id="@id/loading_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:id="@id/iv_download" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/ic_download_start" android:scaleType="centerInside" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/video_layout" android:background="@color/video_bg_color" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="160.0dip" android:layout_marginStart="14.0dip" android:layout_marginEnd="14.0dip">
+            <com.zerozero.hover.videoeditor.view.fullvideoview.UniversalVideoView android:layout_gravity="center" android:id="@id/videoView" android:layout_width="fill_parent" android:layout_height="fill_parent" app:uvv_fitXY="true" app:uvv_centerCrop="true" app:uvv_autoRotation="true" />
+            <ImageView android:id="@id/iv_video_preview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_alignLeft="@id/videoView" android:layout_alignTop="@id/videoView" android:layout_alignRight="@id/videoView" android:layout_alignBottom="@id/videoView" android:layout_alignStart="@id/videoView" android:layout_alignEnd="@id/videoView" />
+            <com.zerozero.hover.videoeditor.view.fullvideoview.UniversalMediaController android:id="@id/media_controller" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentStart="true" app:uvv_scalable="true" />
+        </RelativeLayout>
+        <include android:id="@id/download_original_btn" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="38.0dip" android:layout_marginTop="30.0dip" android:layout_below="@id/video_layout" android:layout_centerHorizontal="true" layout="@layout/video_down_load_item" />
+    </RelativeLayout>
+    <include layout="@layout/scan_header_item" />
+    <include layout="@layout/video_themes_item" />
+    <include android:layout_gravity="bottom" android:id="@id/navigation_view" android:layout_width="fill_parent" android:layout_height="48.0dip" layout="@layout/video_edit_bottom_navigation" />
+</FrameLayout>

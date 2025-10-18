@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/container_update_caution" android:background="@color/transparent_black_50" android:visibility="gone" android:layout_width="300.0dip" android:layout_height="60.0dip" android:layout_marginTop="12.0dip" android:layout_marginStart="112.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_margin="13.0dip" android:src="@mipmap/n5_icon_camera_error" android:contentDescription="@null" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/whole_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/update_to_experience_full_features" android:layout_marginEnd="22.0dip" />
+    </LinearLayout>
+</FrameLayout>

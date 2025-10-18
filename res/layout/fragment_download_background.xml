@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/setting_title_text_color" android:id="@id/download_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_hint_update" android:paddingStart="22.0dip" style="@style/SettingsTitleStyle" />
+    <LinearLayout android:id="@id/setting_app_update_linear" android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_below="@id/download_title">
+        <TextView android:textSize="16.0sp" android:textColor="@color/whole_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_app_update" android:paddingStart="22.0dip" style="@style/SettingsTitleStyle" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/icon_new_app" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:src="@drawable/icon_update_available" android:layout_marginStart="8.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/setting_title_text_color" android:gravity="right" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView style="@style/SettingsItemRightIconStyle" />
+    </LinearLayout>
+    <ImageView android:layout_below="@id/setting_app_update_linear" style="@style/SettingsDividerView" />
+    <Switch android:textSize="16.0sp" android:textColor="@color/whole_white" android:id="@id/setting_download_background_switch" android:background="@color/whole_black" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:thumb="@drawable/switch_thumb_selector" android:text="@string/setting_download_background_title" android:layout_below="@id/setting_app_update_linear" android:track="@drawable/switch_track_selector" android:paddingStart="24.0dip" android:paddingEnd="24.0dip" />
+    <ImageView android:layout_below="@id/setting_download_background_switch" style="@style/SettingsDividerView" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/setting_title_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/setting_download_background_introduction" android:layout_below="@id/setting_download_background_switch" android:lineSpacingMultiplier="1.2" android:layout_marginStart="22.0dip" android:layout_marginEnd="16.0dip" />
+</RelativeLayout>

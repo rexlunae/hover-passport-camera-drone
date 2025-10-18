@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container_caution_view" android:background="@color/whole_black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/color_FF563F" android:id="@id/avoid_fly_condition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/avoid_fly_conditions" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/caution_view_close" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:src="@mipmap/n4_btn_camera_settings_close" android:layout_alignParentRight="true" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/avoid_fly_condition" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/caution_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="237.0dip" android:layout_height="132.0dip" android:src="@mipmap/n5_pic_caution_01" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/whole_white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dim_lighting" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <ImageView android:layout_width="237.0dip" android:layout_height="132.0dip" android:src="@mipmap/n5_pic_caution_02" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/whole_white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/texture_less_surface" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_weight="1.0" android:layout_below="@id/caution_top">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="237.0dip" android:layout_height="132.0dip" android:src="@mipmap/n5_pic_caution_03" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/whole_white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/over_water" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <ImageView android:layout_width="237.0dip" android:layout_height="132.0dip" android:src="@mipmap/n5_pic_caution_04" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/whole_white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/high_elevation_drop_offs" />
+            </FrameLayout>
+        </LinearLayout>
+        <ImageView android:layout_width="124.0dip" android:layout_height="124.0dip" android:src="@mipmap/n5_pic_caution_circle" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

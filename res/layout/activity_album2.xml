@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="72.0dip">
+            <ImageView android:id="@id/iv_activity_album2_close" android:clickable="true" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/selector_owner_extractor_home" android:contentDescription="@null" android:layout_marginStart="16.0dip" />
+            <TextView android:id="@id/txt_activity_album2_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/album" android:layout_marginStart="32.0dip" style="@style/TxtStyleSize18" />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/rv_activity_album2_list" android:paddingBottom="80.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:paddingStart="14.0dip" android:paddingEnd="7.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="center|bottom" android:id="@id/layout_activity_album2_select_mode" android:background="@color/whole_black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <View android:background="@color/light_white" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <ImageView android:id="@id/iv_activity_album2_delete" android:clickable="true" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/n5_icon_session_delete" android:layout_centerInParent="true" android:contentDescription="@null" />
+    </RelativeLayout>
+    <com.zerozero.hover.view.BottomFloatingButton android:layout_gravity="center|bottom" android:id="@id/floating_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" />
+</FrameLayout>

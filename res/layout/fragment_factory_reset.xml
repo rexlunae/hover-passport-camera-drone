@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:padding="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="112.0dip" android:layout_height="112.0dip" android:layout_marginTop="56.0dip" android:src="@mipmap/n5_pic_settings_reset_warming" />
+            <TextView android:textSize="@dimen/setting_update_firmware_check_text_size" android:textColor="@color/setting_factory_setting_warning_text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/setting_factory_reset_margin_between_items" android:text="@string/setting_connection_frequency_band_warning" />
+            <TextView android:textSize="@dimen/setting_factory_reset_warning_text_size" android:textColor="@color/whole_white" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/setting_factory_reset_margin_between_items" android:text="@string/setting_factory_reset_warning" />
+            <TextView android:textSize="@dimen/setting_factory_reset_hint_text_size" android:textColor="@color/setting_factory_setting_description_text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/setting_factory_reset_margin_between_items" android:text="@string/setting_factory_reset_description" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:id="@id/setting_factory_reset_reset" android:text="@string/setting_factory_reset_reset" style="@style/SettingBottomButtonStyle" />
+    </FrameLayout>
+</LinearLayout>

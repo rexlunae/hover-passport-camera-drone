@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:id="@id/container_album_operations" android:background="@color/transparent_black_50" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/picture_button_bars" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/btn_album_share" android:background="@mipmap/icon_album_share_white" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/btn_background_normal" android:layout_marginStart="16.0dip" />
+        <View android:id="@id/btn_view" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:id="@id/btn_edit" android:padding="5.0dip" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@mipmap/n4_icon_album_video_edit" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+        <View android:id="@id/btn_download_weight" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:id="@id/btn_download" android:padding="5.0dip" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@mipmap/n4_ic_album_video_download" android:layout_marginEnd="16.0dip" />
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:id="@id/btn_album_delete" android:background="@mipmap/icon_album_delete_white" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/btn_background_normal" android:layout_marginEnd="16.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="center" android:id="@id/download_progress_item" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:id="@id/progress_download_bar" android:layout_width="254.0dip" android:layout_height="3.0dip" android:layout_marginRight="19.0dip" android:progress="0" android:progressDrawable="@drawable/downloadingprogressbar" android:layout_centerVertical="true" style="?android:attr/progressBarStyleHorizontal" />
+        <ImageView android:id="@id/image_cancel_download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/n4_ic_album_video_downloading_cancel2" android:layout_centerVertical="true" android:layout_toEndOf="@id/progress_download_bar" />
+    </RelativeLayout>
+</FrameLayout>

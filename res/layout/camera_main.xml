@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/main_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/preview_container" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.zerozero.hover.filter.view.ExpandTextureView android:id="@id/image_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            <TextView android:textSize="28.0sp" android:textColor="@color/whole_white" android:layout_gravity="center|bottom" android:id="@id/preview_status_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="@color/whole_black" android:shadowRadius="5.0" />
+            <ImageView android:id="@id/image_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            <ImageView android:id="@id/img_ae_touch_frame" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="80.0dip" android:src="@drawable/pic_ae_touch" />
+            <ImageView android:layout_gravity="top" android:id="@id/img_gimbal_over_top" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:src="@mipmap/pic_gimbal_over_top" android:scaleType="fitXY" />
+            <ImageView android:layout_gravity="bottom" android:id="@id/img_gimbal_over_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:src="@mipmap/pic_gimbal_over_bottom" android:scaleType="fitXY" />
+        </FrameLayout>
+        <include layout="@layout/camera_preview_info" />
+        <RelativeLayout android:id="@id/left_control" android:layout_width="100.0dip" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <include layout="@layout/container_left_running" />
+            <include layout="@layout/container_left_camera" />
+            <include layout="@layout/container_left_manual" />
+        </RelativeLayout>
+        <com.zerozero.hover.view.widget.ControlTouchView android:id="@id/fly_control_slider" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/left_control" />
+        <com.zerozero.hover.view.widget.DetectFaceView android:id="@id/detect_face_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.zerozero.hover.view.widget.DetectAssistantView android:id="@id/detect_assistant_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include layout="@layout/panel_fly_control" />
+        <FrameLayout android:id="@id/container_tracking_control_lay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.zerozero.hover.view.widget.WaveView android:layout_gravity="center|bottom" android:id="@id/wave_view_control_open" android:layout_width="89.0dip" android:layout_height="89.0dip" />
+            <ImageView android:layout_gravity="center|bottom" android:id="@id/btn_control_open" android:layout_width="61.0dip" android:layout_height="61.0dip" android:layout_marginBottom="14.0dip" android:src="@mipmap/n5_btn_camera_float_normal" />
+            <TextView android:textSize="13.0sp" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/control_in_tracking_tip" android:background="@drawable/n5_bg_camera_prompt" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="319.0dip" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/control_when_tracking_desc" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" />
+            <include layout="@layout/tracking_fly_control" />
+        </FrameLayout>
+        <include layout="@layout/assistant_mode_control" />
+        <include layout="@layout/assistant_mode_control_back" />
+        <include layout="@layout/container_ae_lock" />
+        <include layout="@layout/container_camera_status" />
+        <include layout="@layout/camera_right_list" />
+        <include layout="@layout/camera_right_list_video" />
+        <RelativeLayout android:id="@id/right_control" android:layout_width="53.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <include layout="@layout/container_right_camera" />
+            <include layout="@layout/container_right_video" />
+        </RelativeLayout>
+        <include layout="@layout/camera_owner_mode_finding" />
+        <include layout="@layout/camera_setting_capture" />
+        <include layout="@layout/camera_setting_capture_delay" />
+        <FrameLayout android:id="@id/container_video_view" android:padding="3.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentBottom="true">
+            <com.zerozero.hover.view.widget.TextureVideoView android:id="@id/camera_video_view" android:layout_width="235.0dip" android:layout_height="132.0dip" />
+        </FrameLayout>
+        <include layout="@layout/camera_view_warning" />
+        <include layout="@layout/camera_thumbnail_view" />
+    </RelativeLayout>
+    <include layout="@layout/camera_fc_warning" />
+    <include layout="@layout/layout_assistant_dialog_confirm" />
+    <include layout="@layout/layout_assistant_dialog_cancel" />
+    <include layout="@layout/camera_yaw_tutorial_view" />
+    <include layout="@layout/camera_gimbal_tutorial_view" />
+    <include layout="@layout/camera_settings_tutorial_motion" />
+    <include layout="@layout/take_photos_by_volume" />
+    <include layout="@layout/camera_main_loading" />
+    <include layout="@layout/camera_caution_view" />
+</RelativeLayout>

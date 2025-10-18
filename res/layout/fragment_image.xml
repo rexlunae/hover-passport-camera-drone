@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uk.co.senab.photoview.PhotoView android:layout_gravity="center" android:id="@id/photo_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/header_item" layout="@layout/scan_header_item" />
+    <include android:id="@id/edit_navigation" layout="@layout/image_edit_item" />
+</FrameLayout>

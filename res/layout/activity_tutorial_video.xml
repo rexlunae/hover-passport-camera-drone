@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/root_view_tutorial" android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <ImageView android:id="@id/tutorial_close_btn" android:clickable="true" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/selector_owner_extractor_home" android:contentDescription="@null" android:layout_marginStart="16.0dip" />
+            <TextView android:id="@id/txt_title_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tutorial" android:layout_marginStart="32.0dip" style="@style/TxtStyleSize18" />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/rv_video_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+        <View android:id="@id/gap_bottom_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="16.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/container_bottom_views" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/light_white" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <TextView android:layout_gravity="center" android:id="@id/tutorial_start_btn" android:background="@drawable/selector_btn_long_new" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/tutorial_go_start" style="@style/TxtStyleSize18" />
+            <TextView android:layout_gravity="center" android:id="@id/tutorial_add_owner_btn" android:background="@drawable/selector_btn_long_new" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/extractor_title" style="@style/TxtStyleSize18" />
+            <RelativeLayout android:id="@id/layout_tutorial_owner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_marginStart="19.0dip" android:layout_marginEnd="16.0dip">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tutorial_btn_change_owner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/n5_icon_tutorial_owner" android:contentDescription="@null" />
+                    <TextView android:textSize="10.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/change_owner" android:maxLines="1" style="@style/TxtStyleSize18" />
+                </LinearLayout>
+                <TextView android:id="@id/tutorial_btn_start_owner" android:background="@drawable/selector_btn_long_new" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/tutorial_go_start" android:layout_centerVertical="true" android:layout_toEndOf="@id/tutorial_btn_change_owner" style="@style/TxtStyleSize18" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:id="@id/tutorial_layout_check_box" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                <CheckBox android:id="@id/tutorial_check_box" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_tutorial_check_box" />
+                <TextView android:textSize="15.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tutorial_skip_msg" android:layout_marginStart="8.0dip" style="@style/TxtStyleSize16" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include android:visibility="gone" layout="@layout/wifi_connect_loading" />
+</RelativeLayout>

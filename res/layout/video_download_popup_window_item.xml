@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="262.0dip" android:layout_height="86.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="25.0dip" android:layout_centerHorizontal="true">
+        <TextView android:textSize="21.0sp" android:textColor="@color/whole_white" android:id="@id/text_download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/downloading" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="19.0sp" android:textColor="@color/whole_white" android:gravity="center|bottom" android:id="@id/text_progress_percent" android:layout_width="wrap_content" android:layout_height="35.0dip" android:text="0%" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ProgressBar android:id="@id/progress_download" android:layout_width="262.0dip" android:layout_height="3.0dip" android:progress="0" android:progressDrawable="@drawable/downloadingprogressbar" android:layout_above="@id/text_progress_percent" style="?android:attr/progressBarStyleHorizontal" />
+    </RelativeLayout>
+    <TextView android:textSize="19.0sp" android:textColor="@color/whole_white" android:gravity="center" android:id="@id/text_cancel_download" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="@string/cancel_download" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <View android:background="#10ffffff" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/text_cancel_download" android:layout_centerHorizontal="true" />
+</RelativeLayout>

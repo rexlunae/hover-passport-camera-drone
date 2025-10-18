@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/scan_header_item" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/image" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+        <FrameLayout android:id="@id/fl_download" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignLeft="@id/image" android:layout_alignRight="@id/image" android:layout_centerInParent="true">
+            <com.zerozero.hover.newui.session.synchro.RecProgressView android:id="@id/loading_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:id="@id/iv_download" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/ic_download_start" android:scaleType="centerInside" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/video_layout" android:background="@color/video_bg_color" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <com.zerozero.hover.videoeditor.view.fullvideoview.UniversalVideoView android:layout_gravity="center" android:id="@id/videoView" android:layout_width="fill_parent" android:layout_height="fill_parent" app:uvv_fitXY="true" app:uvv_centerCrop="true" app:uvv_autoRotation="true" />
+            <ImageView android:id="@id/iv_video_preview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_alignLeft="@id/videoView" android:layout_alignTop="@id/videoView" android:layout_alignRight="@id/videoView" android:layout_alignBottom="@id/videoView" android:layout_alignStart="@id/videoView" android:layout_alignEnd="@id/videoView" />
+            <com.zerozero.hover.videoeditor.view.fullvideoview.UniversalMediaController android:id="@id/media_controller" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentStart="true" app:uvv_scalable="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

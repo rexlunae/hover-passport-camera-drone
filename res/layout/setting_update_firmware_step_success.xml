@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/SettingUpdateStep4Linear">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/fragment_update_firmware_already_latest" />
+        <TextView android:paddingTop="10.0dip" android:paddingBottom="5.0dip" android:text="@string/setting_update_firmware_update_successfully" style="@style/SettingUpdateStep4TextView" />
+        <TextView android:textSize="14.0sp" android:text="@string/setting_update_firmware_go_hover" style="@style/SettingUpdateStep4TextView" />
+    </LinearLayout>
+    <TextView android:id="@id/setting_update_firmware_step_success_home" android:text="@string/setting_update_firmware_home" style="@style/SettingBottomButtonStyle" />
+</FrameLayout>

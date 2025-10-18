@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/right_control" android:layout_toRightOf="@id/left_control_camera"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_capture_timer" android:visibility="gone" android:layout_width="148.0dip" android:layout_height="148.0dip" android:layout_marginRight="8.0dip" android:src="@mipmap/pic_camera_timer_3" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/video_recording_time" android:background="@drawable/bg_record_time" android:visibility="gone" android:layout_width="72.0dip" android:layout_height="24.0dip" android:layout_marginTop="12.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/point_video_recording_time" android:layout_width="6.0dip" android:layout_height="6.0dip" android:src="@drawable/icon_video_recording_time_point" />
+        <TextView android:textSize="14.0dip" android:textColor="@android:color/white" android:id="@id/text_video_recording_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="00:00" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/pop_message_container" android:background="@drawable/n5_bg_camera_prompt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_centerHorizontal="true">
+        <TextView android:textSize="13.0sp" android:textColor="@color/whole_black" android:gravity="center" android:layout_gravity="center" android:id="@id/pop_message_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="8.0dip" android:maxWidth="320.0dip" />
+    </FrameLayout>
+</RelativeLayout>

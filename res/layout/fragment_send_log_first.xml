@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar_log_first" android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:title="@string/setting_support_and_feedback_send_log" app:navigationIcon="@mipmap/ic_white_back" app:titleTextColor="@color/whole_white" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:id="@id/fragment_title" android:text="@string/setting_title_log" style="@style/SettingsFeedbackItemTitleText" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="22.0dip" android:paddingEnd="22.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_app_log" android:background="@drawable/btn_setting_log_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/n5_icon_settings_log_simple_default" android:scaleType="fitXY" android:contentDescription="@null" />
+                <TextView android:textSize="15.0sp" android:textColor="@drawable/btn_setting_bottom_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/log_simple" android:maxLines="1" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/setting_home_title_text_color" android:id="@id/text_log_size" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/setting_title_log" android:maxLines="1" />
+                <ImageView android:id="@id/image_loading_log" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="9.0dip" android:src="@mipmap/n3_icon_setting_log_shape" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_hover_log" android:background="@drawable/btn_setting_log_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="16.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/n5_icon_settings_log_complete_default" android:scaleType="fitXY" android:contentDescription="@null" />
+                <TextView android:textSize="15.0sp" android:textColor="@drawable/btn_setting_bottom_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" android:text="@string/log_full" android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/sending_view" android:visibility="invisible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ProgressBar android:id="@id/sending_log_progress_bar" android:layout_width="200.0dip" android:layout_height="@dimen/progress_bar_height" android:max="100" android:progressDrawable="@drawable/progress_bar_black" style="?android:attr/progressBarStyleHorizontal" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/whole_white" android:gravity="center" android:id="@id/sending_log_progress_text" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:enabled="false" android:id="@id/btn_fragment_send_log_first" android:text="@string/setting_support_and_feedback_submit" style="@style/SettingBottomButtonStyle" />
+    </FrameLayout>
+</LinearLayout>

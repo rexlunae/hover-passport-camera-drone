@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="ssdk_sina_web_title_id" />
+    <item type="id" name="ssdk_sms_id_clCountry" />
+    <item type="id" name="ssdk_sms_id_et_put_identify" />
+    <item type="id" name="ssdk_sms_id_ivSearch" />
+    <item type="id" name="ssdk_sms_id_iv_clear" />
+    <item type="id" name="ssdk_sms_id_llSearch" />
+    <item type="id" name="ssdk_sms_id_llTitle" />
+    <item type="id" name="ssdk_sms_id_ll_back" />
+    <item type="id" name="ssdk_sms_id_tv_title" />
+</resources>

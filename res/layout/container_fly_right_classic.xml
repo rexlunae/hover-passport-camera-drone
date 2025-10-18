@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/container_fly_right_classic" android:layout_width="160.0dip" android:layout_height="160.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/btn_fly_classic_right" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/n5_btn_camera_control" />
+    <ImageView android:layout_gravity="center" android:id="@id/btn_fly_classic_right_mid" android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/btn_control_videos_mid" />
+</FrameLayout>

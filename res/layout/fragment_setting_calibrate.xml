@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/setting_calibrate_success" />
+    <include layout="@layout/setting_calibrate_failed" />
+    <LinearLayout android:orientation="vertical" android:id="@id/calibrate_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="36.0dip" android:layout_marginStart="50.0dip">
+            <ImageView android:id="@id/calibrate_checkbox1" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/setting_calibrate_steps" android:scaleType="center" android:layout_marginEnd="7.0dip" />
+            <ImageView android:layout_width="17.0dip" android:layout_height="3.0dip" android:src="@mipmap/n5_pic_settings_calibrate_steps_line" android:layout_marginEnd="7.0dip" />
+            <ImageView android:id="@id/calibrate_checkbox2" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/setting_calibrate_steps" android:scaleType="center" android:layout_marginEnd="7.0dip" />
+            <ImageView android:layout_width="17.0dip" android:layout_height="3.0dip" android:src="@mipmap/n5_pic_settings_calibrate_steps_line" android:layout_marginEnd="7.0dip" />
+            <ImageView android:id="@id/calibrate_checkbox3" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/setting_calibrate_steps" android:scaleType="center" android:layout_marginEnd="7.0dip" />
+            <ImageView android:layout_width="17.0dip" android:layout_height="3.0dip" android:src="@mipmap/n5_pic_settings_calibrate_steps_line" android:layout_marginEnd="7.0dip" />
+            <ImageView android:id="@id/calibrate_checkbox4" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/setting_calibrate_steps" android:scaleType="center" android:layout_marginEnd="7.0dip" />
+            <ImageView android:layout_width="17.0dip" android:layout_height="3.0dip" android:src="@mipmap/n5_pic_settings_calibrate_steps_line" android:layout_marginEnd="7.0dip" />
+            <ImageView android:id="@id/calibrate_checkbox5" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/setting_calibrate_steps" android:scaleType="center" android:layout_marginEnd="7.0dip" />
+            <ImageView android:layout_width="17.0dip" android:layout_height="3.0dip" android:src="@mipmap/n5_pic_settings_calibrate_steps_line" android:layout_marginEnd="7.0dip" />
+            <ImageView android:id="@id/calibrate_checkbox6" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/setting_calibrate_steps" android:scaleType="center" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="330.0dip">
+            <ImageView android:id="@id/bg_calibrate_img" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="154.0dip" android:scaleType="centerCrop" android:layout_alignBottom="@id/setting_calibrate_img" />
+            <ImageView android:id="@id/setting_calibrate_img" android:layout_width="fill_parent" android:layout_height="308.0dip" android:src="@mipmap/n5_pic_settings_calibrate_close_01" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/video_red_color" android:gravity="center" android:id="@id/calibrate_caution" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/place_hover_as_shown" android:layout_below="@id/setting_calibrate_img" android:layout_marginStart="10.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/color_FFFFF400" android:gravity="center" android:id="@id/calibrating_caution" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/global_alibrating" android:layout_below="@id/setting_calibrate_img" android:layout_marginStart="10.0dip" />
+        </RelativeLayout>
+        <RelativeLayout android:background="#b217181d" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_marginTop="10.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+            <ImageView android:layout_width="77.0dip" android:layout_height="81.0dip" android:src="@mipmap/n5_icon_settings_calibrate_error_half" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="start|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="24.0dip">
+                    <ImageView android:layout_gravity="center" android:layout_width="4.0dip" android:layout_height="4.0dip" android:src="@drawable/little_circle" android:layout_marginStart="18.0dip" />
+                    <TextView android:textSize="14.0sp" android:textColor="#80ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/keep_hover_camera_powered_on" android:layout_marginStart="14.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginEnd="24.0dip">
+                    <ImageView android:layout_gravity="center|top" android:layout_width="4.0dip" android:layout_height="4.0dip" android:layout_marginTop="7.0dip" android:src="@drawable/little_circle" android:layout_marginStart="18.0dip" />
+                    <TextView android:textSize="14.0sp" android:textColor="#80ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/place_hover_on_flat_surface" android:layout_marginStart="14.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/setting_update_firmware_step_content_text_size" android:textColor="@color/setting_home_title_text_color" android:gravity="center" android:layout_gravity="center|top" android:padding="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_update_firmware_never_connect_with_hover" />
+    <TextView android:enabled="false" android:text="@string/setting_update_firmware_button_next" style="@style/SettingBottomButtonStyle" />
+</FrameLayout>

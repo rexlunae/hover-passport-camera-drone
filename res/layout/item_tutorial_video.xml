@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/item_layout_video" android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <TextView android:id="@id/item_tutorial_txt_step_num" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TxtStyleSize18" />
+        <View android:background="@color/whole_white" android:layout_width="14.0dip" android:layout_height="1.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="16.0dip">
+        <com.zerozero.hover.view.widget.TextureVideoView android:id="@id/item_tutorial_texture_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/item_tutorial_imv_preview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:contentDescription="@null" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/item_tutorial_layout_preview_desc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0" android:paddingStart="30.0dip" android:paddingEnd="30.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/gray_white" android:gravity="center" android:id="@id/item_tutorial_txt_preview_desc" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:textSize="13.0sp" android:id="@id/item_tutorial_txt_show_msg" android:background="@drawable/n5_bg_camera_prompt_bubble" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/video_waring_msg" android:layout_centerHorizontal="true" style="@style/TxtStyleSize12" />
+        <ImageView android:id="@id/item_tutorial_imv_video_play" android:clickable="false" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/selector_tutorial_video_play" android:scaleType="fitXY" android:layout_centerInParent="true" android:contentDescription="@null" />
+        <ImageView android:id="@id/item_tutorial_imv_video_warning" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/n5_pic_tutorial_main" android:scaleType="fitXY" android:contentDescription="@null" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

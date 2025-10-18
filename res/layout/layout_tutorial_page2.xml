@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@mipmap/pic_tutorial_background_02" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="333.0" android:paddingStart="25.0dip" android:paddingEnd="25.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/whole_black" android:gravity="center" android:text="@string/tutorial_page_2_title" android:layout_weight="35.0" style="@style/ItemInOwnerTutorialPageStyle" />
+    <View android:layout_weight="149.0" style="@style/ItemInOwnerTutorialPageStyle" />
+    <LinearLayout android:orientation="horizontal" android:layout_weight="30.0" style="@style/ItemInOwnerTutorialPageStyle">
+        <TextView android:textSize="16.0sp" android:textColor="@color/whole_black" android:gravity="end|center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/tutorial_page_2_desc1" android:layout_weight="1.0" android:layout_marginEnd="5.0dip" />
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+    </LinearLayout>
+    <View android:layout_weight="25.0" style="@style/ItemInOwnerTutorialPageStyle" />
+    <LinearLayout android:orientation="horizontal" android:layout_weight="15.0" style="@style/ItemInOwnerTutorialPageStyle">
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/whole_black" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/tutorial_page_2_desc2" android:maxLines="1" android:layout_weight="1.0" android:layout_marginStart="5.0dip" />
+    </LinearLayout>
+    <View android:layout_weight="10.0" style="@style/ItemInOwnerTutorialPageStyle" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/whole_black" android:text="@string/tutorial_page_2_txt" android:layout_weight="40.0" style="@style/ItemInOwnerTutorialPageStyle" />
+</LinearLayout>

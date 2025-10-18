@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/flight_alert_title" android:layout_weight="1.0" />
+        <ImageView android:id="@id/warning_dialog_close" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="21.0dip" android:layout_marginRight="21.0dip" android:src="@mipmap/n3_btn_camera_close" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:background="#80ffffff" android:layout_width="fill_parent" android:layout_height="0.39999998dip" android:layout_marginBottom="10.0dip" />
+    <ListView android:id="@id/warning_text_list" android:layout_width="320.0dip" android:layout_height="140.0dip" />
+</LinearLayout>

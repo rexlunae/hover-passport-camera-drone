@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/btn_fly_land" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@drawable/icon_camera_land" android:layout_centerInParent="true" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_left_land" android:layout_below="@id/btn_fly_land" android:layout_centerHorizontal="true" style="@style/PreviewIconTxt" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="156.0dip">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/setting_update_firmware_current_step" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/n5_pic_settings_firmware_01" android:scaleType="fitXY" />
+        </FrameLayout>
+        <TextView android:textSize="17.0sp" android:textColor="@color/setting_home_title_text_color" android:gravity="center" android:id="@id/setting_update_firmware_current_step_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:text="@string/check_for_updates" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/setting_update_firmware_content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

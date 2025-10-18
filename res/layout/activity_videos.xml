@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/video_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageView android:id="@id/btn_cancel" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/n4_icon_album_videos_edit_cancel" />
+        <TextView android:textColor="@color/whole_white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:text="@string/camera_roll" android:drawablePadding="5.0dip" android:layout_toRightOf="@id/btn_cancel" />
+        <ImageView android:id="@id/btn_done" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/n4_icon_album_videos_edit_comfirm" android:scaleType="fitCenter" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.zerozero.hover.videoeditor.view.CustomeVideoView android:id="@id/video_play" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/recycleView" android:paddingRight="4.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

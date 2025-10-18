@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/camera_status_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="67.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/status_warning_indicator" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@mipmap/icon_camera_camera_warning" />
+        <ImageView android:id="@id/image_wifi_info" android:visibility="gone" android:layout_width="37.0dip" android:layout_height="37.0dip" android:src="@mipmap/icon_camera_wifi_full" android:layout_toLeftOf="@id/image_battery_info" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/image_battery_info" android:visibility="gone" android:layout_width="37.0dip" android:layout_height="37.0dip" android:src="@mipmap/icon_camera_battery_full" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/warning_pop_view" android:visibility="gone" android:layout_width="138.0dip" android:layout_height="60.0dip" android:layout_marginRight="39.0dip" android:layout_toLeftOf="@id/right_control" android:layout_below="@id/camera_status_container">
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_camera_error_popover" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="12.0dip">
+            <TextView android:textSize="10.0sp" android:textColor="@color/light_white" android:id="@id/warning_pop_text1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:maxLines="1" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/light_white" android:id="@id/warning_pop_text2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:maxLines="1" />
+            <View android:background="@color/light_white" android:layout_width="fill_parent" android:layout_height="0.39999998dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" />
+            <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/light_white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fly_status_warning_pop_more" />
+                <ImageView android:layout_gravity="center" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:src="@mipmap/icon_camera_error_popover_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</merge>

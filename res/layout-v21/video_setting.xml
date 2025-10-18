@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/list_view_my" android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="false" android:divider="@color/setting_home_title_background" android:dividerHeight="0.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <ImageView android:layout_below="@id/list_view_my" style="@style/SettingsDividerView" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/setting_title_text_color" android:id="@id/tvAutoRecord" android:paddingBottom="10.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_video_resolution_introduction" android:layout_below="@id/list_view_my" android:lineSpacingMultiplier="1.2" android:paddingStart="22.0dip" android:layout_marginEnd="16.0dip" style="@style/SettingsTitleStyle" />
+    <Switch android:id="@id/video_setting_switch" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="15.0dip" android:textOn="" android:textOff="" android:text="@string/setting_video_auto_record_introduction" android:layout_below="@id/tvAutoRecord" android:layout_alignParentRight="true" android:showText="true" style="@style/SettingsItemTitle_video" />
+</RelativeLayout>

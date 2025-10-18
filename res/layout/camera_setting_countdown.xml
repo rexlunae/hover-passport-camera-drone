@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/container_countdown" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/btn_countdown_0s" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/btn_camera_setting_countdown_0s" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/whole_white" android:id="@id/btn_countdown_0s_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-7.0dip" android:text="@string/camera_setting_capture_0s" android:layout_below="@id/btn_countdown_0s" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/btn_countdown_3s" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/btn_camera_setting_countdown_3s" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/whole_white" android:id="@id/btn_countdown_3s_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-7.0dip" android:text="@string/camera_setting_capture_3s" android:layout_below="@id/btn_countdown_3s" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/btn_countdown_10s" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/btn_camera_setting_countdown_10s" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/whole_white" android:id="@id/btn_countdown_10s_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-7.0dip" android:text="@string/camera_setting_capture_10s" android:layout_below="@id/btn_countdown_10s" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:background="#50ffffff" android:layout_width="220.0dip" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="6.0dip" />
+</LinearLayout>

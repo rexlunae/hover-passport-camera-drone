@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/calibrate_failed_layout" android:background="@color/whole_black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="150.0dip" android:src="@mipmap/n5_pic_settings_update_failed" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/whole_white" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/calibration_failed" android:layout_marginStart="38.0dip" android:layout_marginEnd="38.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/color_66ffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/calibration_retry" android:layout_marginStart="38.0dip" android:layout_marginEnd="38.0dip" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/calibrate_failed_confirm" android:text="@string/alert_ok" style="@style/SettingBottomButtonStyle" />
+    </FrameLayout>
+</LinearLayout>

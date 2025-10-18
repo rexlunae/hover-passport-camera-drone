@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="75.0dip" android:layout_height="75.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="75.0dip" android:layout_height="75.0dip" android:src="@drawable/bg_rect_dash_line" android:layerType="software" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_download_start" android:scaleType="centerInside" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/whole_white" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxWidth="75.0dip" android:text="@string/loading" android:maxLines="1" />
+    </LinearLayout>
+</FrameLayout>

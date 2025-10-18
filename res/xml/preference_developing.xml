@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Save Log">
+        <EditTextPreference android:title="Save Log preference" android:key="key_save_log" android:dialogTitle="Enter file name of log" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Switcher">
+        <CheckBoxPreference android:title="Skip Take Picture Check" android:key="key_camera_check" />
+        <CheckBoxPreference android:title="Skip Flying Check" android:key="key_flying_check" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Fly Control">
+        <PreferenceScreen android:title="Classic" android:key="key_classic" android:summary="Change sensitivity of Classic mode">
+            <com.zerozero.hover.preference.SeekBarPreference android:title="X:" android:key="key_classic_x_ratio" />
+            <com.zerozero.hover.preference.SeekBarPreference android:title="Y:" android:key="key_classic_y_ratio" />
+            <com.zerozero.hover.preference.SeekBarPreference android:title="Z:" android:key="key_classic_z_ratio" />
+            <com.zerozero.hover.preference.SeekBarPreference android:title="Yaw:" android:key="key_classic_yaw_ratio" />
+            <com.zerozero.hover.preference.SeekBarPreference android:title="Gimbal:" android:key="key_classic_gimbal_ratio" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="Motion" android:key="key_motion" android:summary="Change sensitivity of Motion mode">
+            <com.zerozero.hover.preference.SeekBarPreference android:title="X:" android:key="key_motion_x_ratio" />
+            <com.zerozero.hover.preference.SeekBarPreference android:title="Y:" android:key="key_motion_y_ratio" />
+            <com.zerozero.hover.preference.SeekBarPreference android:title="Z:" android:key="key_motion_z_ratio" />
+            <com.zerozero.hover.preference.SeekBarPreference android:title="Yaw:" android:key="key_motion_yaw_ratio" />
+            <com.zerozero.hover.preference.SeekBarPreference android:title="Gimbal:" android:key="key_motion_gimbal_ratio" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="Joystick" android:key="key_joystick" android:summary="Change sensitivity of Joystick mode">
+            <com.zerozero.hover.preference.SeekBarPreference android:title="X:" android:key="key_joystick_x_ratio" />
+            <com.zerozero.hover.preference.SeekBarPreference android:title="Y:" android:key="key_joystick_y_ratio" />
+            <com.zerozero.hover.preference.SeekBarPreference android:title="Z:" android:key="key_joystick_z_ratio" />
+            <com.zerozero.hover.preference.SeekBarPreference android:title="Yaw:" android:key="key_joystick_yaw_ratio" />
+            <com.zerozero.hover.preference.SeekBarPreference android:title="Gimbal:" android:key="key_joystick_gimbal_ratio" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

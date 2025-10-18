@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/extractor_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <View android:id="@id/blank_bottom" android:layout_width="fill_parent" android:layout_height="160.0dip" android:layout_alignParentBottom="true" />
+        <FrameLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/blank_bottom" android:layout_alignParentTop="true">
+            <TextureView android:id="@id/camera_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.zerozero.hover.view.widget.CircleProgressView android:layout_gravity="center" android:id="@id/extract_progress" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/bar_top" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentTop="true">
+            <ImageView android:id="@id/close_btn" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/selector_owner_extractor_back" android:contentDescription="@null" android:layout_marginStart="16.0dip" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/whole_white" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/extractor_title" android:layout_weight="1.0" android:layout_marginStart="32.0dip" />
+            <ImageView android:id="@id/switch_btn" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/selector_owner_extractor_camera_switcher" android:layout_marginEnd="16.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/bar_bottom" android:background="@color/whole_black" android:paddingBottom="50.0dip" android:layout_width="fill_parent" android:layout_height="250.0dip" android:layout_alignParentBottom="true" android:layout_alignParentStart="true">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip" android:text="@string/owner_hint_turn_face" style="@style/TxtStyleSize16" />
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="136.0dip" android:layout_height="88.0dip" android:src="@mipmap/n5_pic_owner_reference" android:contentDescription="@null" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:layout_gravity="center|bottom" android:id="@id/start_btn" android:background="@drawable/selector_btn_long_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/extractor_start" style="@style/TxtStyleSize18" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <include layout="@layout/owner_feature_uploading" />
+</RelativeLayout>

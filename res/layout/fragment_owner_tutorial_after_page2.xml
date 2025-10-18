@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@mipmap/n4_pic_owner_tutorial_background_03" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="333.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="24.0sp" android:textColor="@color/whole_black" android:gravity="center|bottom" android:text="@string/owner_tutorial_page3_txt_title" android:layout_weight="35.0" style="@style/ItemInOwnerTutorialPageStyle" />
+    <LinearLayout android:orientation="vertical" android:layout_weight="47.0" style="@style/ItemInOwnerTutorialPageStyle">
+        <TextView android:textSize="16.0sp" android:textColor="@color/transparent_black_30" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/owner_tutorial_page3_txt_hint" android:maxLines="1" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/whole_black" android:gravity="bottom" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/owner_tutorial_page3_txt_desc1" android:layout_weight="4.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_weight="113.0" style="@style/ItemInOwnerTutorialPageStyle">
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/whole_black" android:gravity="bottom" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/owner_tutorial_page3_txt_desc2" android:layout_weight="4.0" />
+    </LinearLayout>
+    <View android:layout_weight="93.0" style="@style/ItemInOwnerTutorialPageStyle" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_weight="46.0" style="@style/ItemInOwnerTutorialPageStyle">
+        <TextView android:id="@id/btn_next_owner_tutorial_after_page2" android:text="@string/owner_tutorial_page0_wifi_btn" style="@style/BtnInOwnerTutorialPageStyle" />
+    </LinearLayout>
+</LinearLayout>

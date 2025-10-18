@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/warning_item_indicator" android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@mipmap/icon_camera_rec" android:layout_marginStart="5.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="#80ffffff" android:id="@id/warning_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="5.0dip" />
+</LinearLayout>

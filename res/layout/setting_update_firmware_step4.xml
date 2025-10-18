@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/setting_update_firmware_step4" android:background="@color/setting_update_firmware_top_part_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="156.0dip">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/setting_update_firmware_current_step" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/n5_pic_settings_firmware_04" android:scaleType="fitXY" />
+        </FrameLayout>
+        <TextView android:textSize="17.0sp" android:textColor="@color/setting_home_title_text_color" android:gravity="center" android:id="@id/setting_update_firmware_current_step_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:text="@string/install" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:id="@id/setting_update_firmware_step4_loading_linear" android:visibility="visible" android:layout_marginTop="88.0dip" style="@style/SettingUpdateStep4Linear">
+            <ProgressBar android:layout_gravity="center" android:id="@id/setting_update_firmware_step4_progress" android:layout_width="@dimen/setting_update_firmware_step_progress_bar_width" android:layout_height="@dimen/progress_bar_height" android:progressDrawable="@drawable/progress_bar_black" style="?android:attr/progressBarStyleHorizontal" />
+            <TextView android:id="@id/setting_update_firmware_step4_downloading_hint" android:layout_marginTop="26.0dip" style="@style/SettingUpdateStep4TextView" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/setting_title_text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:visibility="visible" android:layout_width="286.0dip" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/setting_update_firmware_upload_hint" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/setting_update_firmware_step4_process_aborted" android:visibility="gone" style="@style/SettingUpdateStep4Linear">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/setting_update_firmware_abort" />
+            <TextView android:paddingTop="10.0dip" android:paddingBottom="5.0dip" android:text="@string/setting_update_firmware_process_abort" style="@style/SettingUpdateStep4TextView" />
+            <TextView android:textSize="14.0sp" android:paddingBottom="5.0dip" android:text="@string/setting_update_firmware_update_later" style="@style/SettingUpdateStep4TextView" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/setting_update_firmware_step4_failed_linear" android:visibility="gone" style="@style/SettingUpdateStep4Linear">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/setting_update_firmware_download_failed" />
+            <TextView android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:text="@string/setting_update_firmware_install_failed" style="@style/SettingUpdateStep4TextView" />
+            <TextView android:textColor="@drawable/fragment_update_firmware_check_again" android:layout_gravity="center" android:id="@id/setting_update_firmware_step4_retry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_update_firmware_download_retry" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/setting_update_firmware_step4_upload_hint_linear" android:visibility="gone" style="@style/SettingUpdateStep4Linear">
+            <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.2" />
+            <FrameLayout android:layout_gravity="center" android:layout_width="293.0dip" android:layout_height="83.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/setting_update_firmware_step4_upload_hint_img" android:layout_width="293.0dip" android:layout_height="83.0dip" android:src="@mipmap/n5_pic_settings_update_install_01" />
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/n5_settings_update_install_point" />
+            </FrameLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/whole_white" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setting_update_firmware_during_upgrade" android:layout_weight="1.0" android:layout_marginEnd="5.0dip" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/whole_white" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setting_update_firmware_upgrade_success" android:layout_weight="1.0" android:layout_marginStart="5.0dip" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="@color/setting_title_text_color" android:gravity="center_horizontal" android:layout_width="162.0dip" android:layout_height="wrap_content" android:text="@string/setting_update_firmware_light_flash" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/setting_title_text_color" android:gravity="center" android:layout_gravity="center" android:layout_width="162.0dip" android:layout_height="wrap_content" android:text="@string/setting_update_firmware_light_on" android:layout_marginStart="10.0dip" />
+            </LinearLayout>
+            <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.2" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/setting_memory_video" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_update_firmware_dont_unplug_battery" />
+            <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <RelativeLayout android:background="#b217181d" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_marginBottom="20.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+                <ImageView android:layout_width="77.0dip" android:layout_height="81.0dip" android:src="@mipmap/n5_icon_settings_calibrate_error_half" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                <LinearLayout android:gravity="start|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="24.0dip">
+                        <ImageView android:layout_gravity="center" android:layout_width="4.0dip" android:layout_height="4.0dip" android:src="@drawable/little_circle" android:layout_marginStart="18.0dip" />
+                        <TextView android:textSize="14.0sp" android:textColor="#80ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setting_update_firmware_upgrade_time_hint" android:layout_marginStart="14.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginEnd="24.0dip">
+                        <ImageView android:layout_gravity="center|top" android:layout_width="4.0dip" android:layout_height="4.0dip" android:layout_marginTop="7.0dip" android:src="@drawable/little_circle" android:layout_marginStart="18.0dip" />
+                        <TextView android:textSize="14.0sp" android:textColor="#80ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/reconnect_after_updated" android:layout_marginStart="14.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <TextView android:id="@id/setting_update_firmware_abort_button" android:visibility="gone" android:text="@string/setting_update_firmware_abort" style="@style/SettingBottomButtonStyle" />
+</LinearLayout>

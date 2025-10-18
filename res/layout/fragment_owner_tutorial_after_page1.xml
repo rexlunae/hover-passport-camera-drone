@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@mipmap/n4_pic_owner_tutorial_background_02" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="333.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="24.0sp" android:textColor="@color/whole_black" android:gravity="center|bottom" android:text="@string/owner_tutorial_page2_txt_title" android:layout_weight="35.0" style="@style/ItemInOwnerTutorialPageStyle" />
+    <View android:layout_weight="170.0" style="@style/ItemInOwnerTutorialPageStyle" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/whole_black" android:gravity="center|top" android:text="@string/owner_tutorial_page2_txt_desc" android:layout_weight="128.0" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" style="@style/ItemInOwnerTutorialPageStyle" />
+</LinearLayout>

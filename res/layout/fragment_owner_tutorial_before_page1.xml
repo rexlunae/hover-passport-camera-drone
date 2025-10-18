@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@mipmap/n4_pic_owner_tutorial_background_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="333.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_weight="107.0" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" style="@style/ItemInOwnerTutorialPageStyle">
+        <TextView android:textSize="24.0sp" android:textColor="@color/whole_black" android:id="@id/txt_owner_mode_tutorial_page0_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/owner_tutorial_page0_wifi_title" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/transparent_black_30" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/owner_tutorial_page0_wifi_desc" android:layout_below="@id/txt_owner_mode_tutorial_page0_title" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <View android:id="@id/view" android:layout_weight="26.0" style="@style/ItemInOwnerTutorialPageStyle" />
+    <LinearLayout android:orientation="horizontal" android:layout_weight="15.0" style="@style/ItemInOwnerTutorialPageStyle">
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/whole_black" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/owner_tutorial_page0_wifi_settings_title" android:layout_weight="2.0" />
+    </LinearLayout>
+    <View android:layout_weight="5.0" style="@style/ItemInOwnerTutorialPageStyle" />
+    <LinearLayout android:orientation="horizontal" android:layout_weight="14.0" style="@style/ItemInOwnerTutorialPageStyle">
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/whole_black" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/owner_tutorial_page0_wifi_settings_title" android:layout_weight="5.0" />
+    </LinearLayout>
+    <View android:layout_weight="9.0" style="@style/ItemInOwnerTutorialPageStyle" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/whole_black" android:gravity="center" android:text="@string/owner_tutorial_page0_wifi_settings_name" android:maxLines="1" android:layout_weight="19.0" style="@style/ItemInOwnerTutorialPageStyle" />
+    <View android:layout_weight="6.0" style="@style/ItemInOwnerTutorialPageStyle" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/whole_black" android:gravity="center" android:text="@string/owner_tutorial_page0_wifi_settings_pwd" android:maxLines="1" android:layout_weight="19.0" style="@style/ItemInOwnerTutorialPageStyle" />
+    <LinearLayout android:gravity="center" android:layout_weight="113.0" style="@style/ItemInOwnerTutorialPageStyle">
+        <TextView android:id="@id/btn_next_owner_tutorial_before_page1" android:text="@string/owner_tutorial_page0_wifi_btn" style="@style/BtnInOwnerTutorialPageStyle" />
+    </LinearLayout>
+</LinearLayout>

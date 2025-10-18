@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="bottom" android:id="@id/container_album_operations" android:background="@color/whole_black" android:visibility="invisible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/btn_album_share" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/btn_album_share" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/btn_album_delete" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="16.0dip" android:src="@drawable/btn_album_delete" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.github.mikephil.charting.charts.PieChart android:id="@id/pie_chat" android:layout_width="184.0dip" android:layout_height="184.0dip" android:layout_marginTop="82.0dip" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="38.0sp" android:textColor="@color/whole_white" android:id="@id/setting_memory_percentage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="145.0dip" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/setting_home_title_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_memory_free" android:layout_below="@id/setting_memory_percentage" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginTop="65.0dip" android:layout_marginRight="36.0dip" android:layout_below="@id/pie_chat">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_horizontal" android:background="@color/color_FFFFF400" android:layout_width="20.0dip" android:layout_height="3.0dip" />
+            <TextView android:textSize="23.0sp" android:textColor="@color/whole_white" android:gravity="center" android:id="@id/setting_memory_occupy_GB" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/setting_home_title_text_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/setting_memory_occupy" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_horizontal" android:background="@color/color_FFBBBBBB" android:layout_width="20.0dip" android:layout_height="3.0dip" />
+            <TextView android:textSize="23.0sp" android:textColor="@color/whole_white" android:gravity="center" android:id="@id/setting_memory_free_GB" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/setting_home_title_text_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/setting_memory_free" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@id/setting_memory_format_memory" android:visibility="visible" android:text="@string/setting_memory_format_memory" style="@style/SettingBottomButtonStyle" />
+</RelativeLayout>

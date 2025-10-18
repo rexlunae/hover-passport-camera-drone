@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/container_fly_control" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:layout_toLeftOf="@id/right_control" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/mirror_message_container" android:background="@drawable/bg_camera_tips" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginRight="8.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/whole_white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="4.0dip" android:text="@string/camera_tips_tap_to_land" />
+    </LinearLayout>
+</LinearLayout>

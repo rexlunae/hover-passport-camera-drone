@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/setting_tutorial_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+    <ImageView android:layout_gravity="bottom" android:id="@id/tutorial_fragment_bottom_button" android:background="@color/color_tutorial_bottom" android:layout_width="fill_parent" android:layout_height="48.0dip" android:src="@mipmap/n3_bg_tutorial_slide_01" android:scaleType="centerCrop" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/light_white" android:gravity="center" android:layout_gravity="end|bottom" android:id="@id/tutorial_skip_button" android:layout_width="72.0dip" android:layout_height="48.0dip" android:text="@string/tutorial_skip" android:layout_marginEnd="10.0dip" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/whole_white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/enjoy" android:background="@color/color_tutorial_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/tutorial_enjoy" />
+</FrameLayout>

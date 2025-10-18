@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ae_lock_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="200.0dip" android:layout_height="32.0dip">
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/pic_camera_ae_background" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/pic_camera_ae_sun" android:layout_marginStart="6.0dip" />
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <FrameLayout android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/ae_compensation_slide" android:layout_width="fill_parent" android:layout_height="4.0dip" android:src="@drawable/pic_ae_compensation_slide" />
+                </FrameLayout>
+                <ImageView android:layout_gravity="center" android:id="@id/ae_compensation_bar" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@mipmap/pic_camera_ae_slider" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="24.0dip" android:layout_marginTop="6.0dip">
+        <TextView android:textSize="12.0sp" android:gravity="center" android:layout_gravity="center" android:background="@mipmap/pic_camera_aelock_background" android:layout_width="60.0dip" android:layout_height="18.0dip" android:text="AE LOCK" android:maxLines="1" android:textAlignment="center" />
+    </FrameLayout>
+</LinearLayout>

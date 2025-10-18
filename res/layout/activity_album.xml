@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="16.0dip" android:paddingEnd="40.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/setting_memory_back" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/selector_owner_extractor_back" />
+                <com.flyco.tablayout.SlidingTabLayout android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="fill_parent" app:tl_indicator_color="@color/whole_white" app:tl_indicator_gravity="BOTTOM" app:tl_indicator_height="2.0dip" app:tl_indicator_style="NORMAL" app:tl_indicator_width="42.0dip" app:tl_tab_space_equal="true" app:tl_textSelectColor="@color/whole_white" app:tl_textUnselectColor="@color/color_66ffffff" app:tl_textsize="16.0sp" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/container_choose_info" android:background="@color/whole_black" android:visibility="invisible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="14.0sp" android:textColor="@color/whole_white" android:gravity="center_vertical" android:id="@id/btn_album_cancel" android:background="@color/whole_black" android:layout_width="wrap_content" android:layout_height="26.0dip" android:minWidth="48.0dip" android:text="@string/btn_cancel" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="16.0dip" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/whole_white" android:ellipsize="end" android:gravity="center" android:id="@id/text_selection_info" android:background="@color/whole_black" android:layout_width="wrap_content" android:layout_height="26.0dip" android:maxWidth="80.0dip" android:singleLine="true" android:layout_centerInParent="true" android:layout_centerVertical="true" android:textAlignment="center" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/whole_white" android:gravity="center_vertical" android:id="@id/btn_album_select_all" android:background="@color/whole_black" android:layout_width="wrap_content" android:layout_height="26.0dip" android:minWidth="48.0dip" android:text="@string/album_top_bar_select_all" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="16.0dip" />
+            </RelativeLayout>
+        </FrameLayout>
+    </android.support.design.widget.AppBarLayout>
+    <com.zerozero.hover.view.AlbumViewPager android:id="@id/container" android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</android.support.design.widget.CoordinatorLayout>

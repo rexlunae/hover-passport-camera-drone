@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container_tracking_control_btn" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_marginStart="100.0dip" android:layout_marginEnd="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/container_camera_control_videos_up" android:background="@mipmap/n5_btn_camera_control_videos_up_whole" android:layout_width="60.0dip" android:layout_height="176.0dip" android:layout_marginLeft="16.0dip" android:layout_marginBottom="24.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <View android:id="@id/bg_camera_control_videos_up" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/btn_camera_control_videos_up" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/btn_control_videos_mid" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/container_camera_control_videos_forward" android:background="@mipmap/n5_btn_camera_control_videos_forward_whole" android:layout_width="60.0dip" android:layout_height="176.0dip" android:layout_marginBottom="24.0dip" android:layout_alignParentBottom="true" android:layout_marginEnd="29.0dip" android:layout_alignParentEnd="true">
+        <View android:id="@id/bg_camera_control_videos_forward" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/btn_camera_control_videos_forward" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/btn_control_videos_mid" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar_log_third" android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:title="@string/upload_hover_log" app:navigationIcon="@mipmap/ic_white_back" app:titleTextColor="@color/whole_white" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/upload_hover_log_img" android:layout_width="226.0dip" android:layout_height="90.0dip" android:layout_marginBottom="254.0dip" android:src="@mipmap/n5_pic_settings_log_upload" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:id="@id/upload_hover_log_progress_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:id="@id/upload_hover_log_progressbar" android:layout_width="200.0dip" android:layout_height="@dimen/progress_bar_height" android:layout_marginTop="32.0dip" android:layout_marginBottom="210.0dip" android:max="100" android:progress="50" android:progressDrawable="@drawable/progress_bar_black" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="?android:attr/progressBarStyleHorizontal" />
+            <TextView android:textSize="17.0sp" android:textColor="@color/whole_white" android:id="@id/upload_hover_log_progress" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" android:layout_marginBottom="166.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/upload_hover_log_text" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/whole_white" android:paddingBottom="206.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upload_hover_log_text" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="11.0sp" android:textColor="#e5ffffff" android:gravity="center" android:paddingBottom="40.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/upload_hover_log_tip" android:layout_alignParentBottom="true" android:alpha="0.3" android:layout_marginStart="81.0dip" android:layout_marginEnd="81.0dip" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="101.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <TextView android:textSize="16.0sp" android:textColor="@color/color_FFFFFF_50" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_update_firmware_size" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/whole_white" android:id="@id/upload_hover_log_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/btn_fragment_send_log_third" android:text="@string/upload_hover_log" style="@style/SettingBottomButtonStyle" />
+    </FrameLayout>
+</LinearLayout>

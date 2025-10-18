@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zerozero.hover.ui.GridItemBase android:layout_width="fill_parent" android:layout_height="106.0dip" android:layout_marginRight="7.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_thumb" android:duplicateParentState="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/image_video_eye" android:background="@mipmap/n4_ic_album_video_eye" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" />
+    <ImageView android:id="@id/image_local_flag" android:padding="2.0dip" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/icon_setting_memory_plane" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+    <View android:id="@id/shadow_bg" android:background="@color/transparent_black_30" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/video_download" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/ic_download_start" android:scaleType="centerInside" android:layout_centerInParent="true" />
+    <View android:id="@id/progress_bg_color" android:background="@color/download_progress_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/image_selected" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:src="@mipmap/n5_btn_settings_memory_select_circle_selected" android:scaleType="centerCrop" android:layout_alignParentRight="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/whole_white" android:gravity="center" android:id="@id/text_duration" android:paddingRight="8.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" />
+</com.zerozero.hover.ui.GridItemBase>

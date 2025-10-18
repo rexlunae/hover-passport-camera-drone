@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zerozero.hover.videoeditor.view.SquareRelativeLayout android:paddingRight="7.0dip" android:paddingBottom="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_thumb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/iv_video_mark" android:layout_width="fill_parent" android:layout_height="26.0dip" android:src="@mipmap/pic_session_video" android:scaleType="centerCrop" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/whole_white" android:id="@id/tv_video_mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginBottom="6.0dip" android:text="@string/video" android:layout_alignParentBottom="true" />
+</com.zerozero.hover.videoeditor.view.SquareRelativeLayout>

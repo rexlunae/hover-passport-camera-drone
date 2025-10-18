@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/setting_support_and_feedback_choice_dialog_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="90.0dip" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/setting_support_and_feedback_report_problem" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/btn_settings_feedback_problem" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/whole_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/setting_support_and_feedback_report_problem" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="25.0dip">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/setting_support_and_feedback_general_feedback" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/btn_settings_feedback_general" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/whole_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/setting_support_and_feedback_general_feedback" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/setting_support_and_feedback_send_log" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginTop="80.0dip" android:src="@drawable/btn_settings_feedback_log" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/whole_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/setting_support_and_feedback_send_log" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/setting_support_and_feedback_cancel" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/btn_settings_feedback_cancel" />
+    </LinearLayout>
+</RelativeLayout>

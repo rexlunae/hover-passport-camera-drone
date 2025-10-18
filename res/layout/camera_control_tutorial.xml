@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zerozero.hover.view.widget.ControlTutorialView android:id="@id/container_camera_control_tutorial" android:background="@color/transparent_black_30" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center" android:id="@id/container_tutorial_yaw" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center" android:id="@id/tutorial_yaw_img" android:layout_width="156.0dip" android:layout_height="128.0dip" android:src="@mipmap/n4_pic_camera_tutorial_yaw" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/whole_white" android:layout_gravity="center|bottom" android:id="@id/tutorial_yaw_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/camera_tips_rotate_device" />
+    </FrameLayout>
+    <FrameLayout android:gravity="center" android:id="@id/container_tutorial_gimbal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center" android:id="@id/tutorial_gimbal_img" android:layout_width="138.0dip" android:layout_height="210.0dip" android:src="@mipmap/n4_pic_camera_tutorial_gimbal" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/whole_white" android:layout_gravity="center|bottom" android:id="@id/tutorial_gimbal_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/camera_tips_adjust_lens" />
+    </FrameLayout>
+</com.zerozero.hover.view.widget.ControlTutorialView>

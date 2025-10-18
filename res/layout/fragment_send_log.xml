@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout style="@style/SettingsFeedbackItemTitle">
+            <TextView android:text="@string/setting_title_log" style="@style/SettingsFeedbackItemTitleText" />
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@android:color/black" android:paddingTop="@dimen/setting_item_padding_top_and_bottom" android:paddingBottom="@dimen/setting_item_padding_top_and_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="22.0dip" android:paddingEnd="@dimen/setting_home_item_margin">
+            <TextView android:textSize="17.0sp" android:textColor="@color/whole_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_support_and_feedback_add_log" />
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="15.0sp" android:textColor="@color/whole_white" android:layout_gravity="right|center" android:id="@id/text_log_size" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:layout_gravity="right|center" android:id="@id/image_loading_log" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/n3_icon_setting_log_shape" />
+            </FrameLayout>
+            <CheckBox android:id="@id/btn_send_log_sure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:button="@drawable/sendlog_checkbox" />
+        </LinearLayout>
+        <ImageView style="@style/SettingsDividerView" />
+        <FrameLayout android:paddingLeft="@dimen/setting_home_item_margin" android:paddingRight="@dimen/setting_home_item_margin" android:clickable="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:textColor="#65ffffff" android:id="@id/text_last_send_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/sending_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ProgressBar android:layout_gravity="center" android:id="@id/sending_log_progress_bar" android:layout_width="200.0dip" android:layout_height="@dimen/progress_bar_height" android:max="100" android:progressDrawable="@drawable/progress_bar_black" style="?android:attr/progressBarStyleHorizontal" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/whole_white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/sending_log_progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:enabled="false" android:id="@id/setting_support_and_feedback_submit" android:text="@string/setting_support_and_feedback_submit" style="@style/SettingBottomButtonStyle" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

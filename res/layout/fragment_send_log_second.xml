@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar_log_second" android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:title="@string/download" app:navigationIcon="@mipmap/ic_white_back" app:titleTextColor="@color/whole_white" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ImageView android:layout_width="226.0dip" android:layout_height="90.0dip" android:layout_marginTop="144.0dip" android:src="@mipmap/n5_pic_settings_log_download" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/whole_white" android:id="@id/download_hover_log_text" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="@string/download_hover_log_to_phone" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/download_hover_log_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip">
+            <ProgressBar android:id="@id/download_hover_log_progressbar" android:layout_width="200.0dip" android:layout_height="@dimen/progress_bar_height" android:max="100" android:progressDrawable="@drawable/progress_bar_black" style="?android:attr/progressBarStyleHorizontal" />
+            <TextView android:textSize="17.0sp" android:textColor="@color/whole_white" android:id="@id/download_hover_log_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" android:text="0%" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="49.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/color_FFFFFF_50" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_update_firmware_size" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/whole_white" android:id="@id/download_hover_log_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/btn_fragment_send_log_second" android:text="@string/download" style="@style/SettingBottomButtonStyle" />
+    </FrameLayout>
+</LinearLayout>

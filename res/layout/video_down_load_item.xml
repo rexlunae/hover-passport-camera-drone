@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/download_original_progress" android:layout_width="@dimen/progress_width" android:layout_height="fill_parent" android:max="100" android:progressDrawable="@drawable/download_original_video_bg" style="?android:attr/progressBarStyleHorizontal" />
+    <LinearLayout android:gravity="center_horizontal" android:id="@id/download_original_video_start" android:visibility="gone" android:layout_width="@dimen/progress_width" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/download_img" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/n5_icon_album_video_download" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/whole_white" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/download_original_video" android:layout_centerInParent="true" android:layout_marginStart="2.0dip" android:layout_toEndOf="@id/download_img" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/download_original_video_pause" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/n5_icon_session_download_pause_small" android:layout_centerInParent="true" />
+    <ImageView android:layout_gravity="center" android:id="@id/download_original_video_finish" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/n5_pic_album_video_download_right" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@mipmap/pic_tutorial_background_04" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="333.0" android:paddingStart="25.0dip" android:paddingEnd="25.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/whole_black" android:gravity="center" android:text="@string/tutorial_page_4_title" android:layout_weight="35.0" style="@style/ItemInOwnerTutorialPageStyle" />
+    <TextView android:textSize="17.0sp" android:textColor="@color/transparent_black_30" android:gravity="bottom" android:text="@string/tutorial_page_4_desc1" android:layout_weight="20.0" style="@style/ItemInOwnerTutorialPageStyle" />
+    <View android:layout_weight="72.0" style="@style/ItemInOwnerTutorialPageStyle" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/whole_black" android:gravity="center_vertical" android:text="@string/tutorial_page_4_txt1" android:maxLines="3" android:layout_weight="40.0" style="@style/ItemInOwnerTutorialPageStyle" />
+    <TextView android:textSize="17.0sp" android:textColor="@color/transparent_black_30" android:gravity="bottom" android:text="@string/tutorial_page_4_desc2" android:layout_weight="20.0" style="@style/ItemInOwnerTutorialPageStyle" />
+    <View android:layout_weight="82.0" style="@style/ItemInOwnerTutorialPageStyle" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/whole_black" android:gravity="center_vertical" android:text="@string/tutorial_page_4_txt2" android:maxLines="3" android:layout_weight="40.0" style="@style/ItemInOwnerTutorialPageStyle" />
+</LinearLayout>

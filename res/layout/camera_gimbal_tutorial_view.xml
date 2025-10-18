@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zerozero.hover.view.widget.NonResponseSlideLayout android:id="@id/camera_gimbal_tutorial_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/n5_pic_camera_tutorial_yaw" android:scaleType="fitXY" />
+    <View android:id="@id/center_line" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_centerInParent="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/whole_white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/slide_up_or_down" android:layout_above="@id/center_line" android:layout_marginStart="80.0dip" android:layout_marginEnd="40.0dip" />
+</com.zerozero.hover.view.widget.NonResponseSlideLayout>

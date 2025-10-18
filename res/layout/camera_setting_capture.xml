@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container_setting_capture" android:background="@drawable/camera_setting_bg" android:visibility="gone" android:layout_width="280.0dip" android:layout_height="wrap_content" android:layout_marginLeft="115.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+        <include layout="@layout/camera_setting_countdown" />
+        <include layout="@layout/camera_setting_flash_mode" />
+        <include layout="@layout/camera_setting_mirror_view" />
+        <ImageView android:layout_gravity="center" android:background="#50ffffff" android:layout_width="220.0dip" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="6.0dip" />
+        <include layout="@layout/camera_setting_control_mode" />
+    </LinearLayout>
+</RelativeLayout>

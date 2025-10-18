@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zerozero.hover.view.timeline.DashedLine android:layout_gravity="center" android:id="@id/dashedLine" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+    <android.support.v7.widget.AppCompatSeekBar android:layout_gravity="center" android:id="@id/seekBar" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="4.0dip" android:indeterminate="false" android:progressDrawable="@drawable/bg_seekbar_progress" android:minHeight="4.0dip" android:thumb="@drawable/white_dot" android:thumbOffset="0.0dip" android:paddingStart="0.0dip" android:paddingEnd="0.0dip" style="@style/Base.Widget.AppCompat.SeekBar" />
+</merge>

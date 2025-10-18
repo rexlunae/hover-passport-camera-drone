@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center|bottom" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center|bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center|bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center|bottom" android:padding="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout style="@style/ShareItemLayout">
+                    <ImageView android:id="@id/dialog_share_facebook" android:src="@mipmap/icon_album_share_facebook" style="@style/ShareItemImage" />
+                    <TextView android:text="@string/share_facebook" style="@style/ShareItemText" />
+                </LinearLayout>
+                <LinearLayout style="@style/ShareItemLayout">
+                    <ImageView android:id="@id/dialog_share_instagram" android:src="@mipmap/icon_album_share_instagram" style="@style/ShareItemImage" />
+                    <TextView android:text="@string/share_instagram" style="@style/ShareItemText" />
+                </LinearLayout>
+                <LinearLayout style="@style/ShareItemLayout">
+                    <ImageView android:id="@id/dialog_share_twitter" android:src="@mipmap/icon_album_share_twitter" style="@style/ShareItemImage" />
+                    <TextView android:text="@string/share_twitter" style="@style/ShareItemText" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/dialog_share_youtube_item" style="@style/ShareItemLayout">
+                    <ImageView android:id="@id/dialog_share_youtube" android:src="@mipmap/icon_album_share_youtube" style="@style/ShareItemImage" />
+                    <TextView android:text="@string/share_youtube" style="@style/ShareItemText" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:padding="28.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout style="@style/ShareItemLayout">
+                    <ImageView android:id="@id/dialog_share_weibo" android:src="@mipmap/icon_album_share_weibo" style="@style/ShareItemImage" />
+                    <TextView android:text="@string/share_weibo" style="@style/ShareItemText" />
+                </LinearLayout>
+                <LinearLayout style="@style/ShareItemLayout">
+                    <ImageView android:id="@id/dialog_share_wechat" android:src="@mipmap/icon_album_share_wechat" style="@style/ShareItemImage" />
+                    <TextView android:text="@string/share_wechat" style="@style/ShareItemText" />
+                </LinearLayout>
+                <LinearLayout style="@style/ShareItemLayout">
+                    <ImageView android:id="@id/dialog_share_wechat_timeline" android:src="@mipmap/icon_album_share_wechattimeline" style="@style/ShareItemImage" />
+                    <TextView android:text="@string/share_wechat_timeline" style="@style/ShareItemText" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/dialog_share_more_item" style="@style/ShareItemLayout">
+                    <ImageView android:id="@id/dialog_share_more" android:src="@mipmap/icon_album_share_more" style="@style/ShareItemImage" />
+                    <TextView android:text="@string/share_more" style="@style/ShareItemText" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="#ffe4e4e4" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <Button android:textSize="16.0sp" android:textColor="#ff7d7d7d" android:gravity="center" android:id="@id/dialog_share_close" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/cancel_share" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/step2_failed_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:padding="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/setting_update_firmware_download_failed" />
+            <TextView android:textSize="25.0sp" android:textColor="@color/whole_white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_update_firmware_download_failed" />
+        </LinearLayout>
+        <TextView android:id="@id/setting_update_firmware_step2_download_retry" android:text="@string/setting_update_firmware_download_retry" style="@style/SettingBottomButtonStyle" />
+    </FrameLayout>
+    <include layout="@layout/setting_update_firmware_step2_normal" />
+</FrameLayout>

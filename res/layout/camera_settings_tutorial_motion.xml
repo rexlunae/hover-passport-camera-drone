@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zerozero.hover.view.widget.MotionTutorialView android:id="@id/camera_settings_tutorial_motion" android:background="#e6000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/motion_tutorial_close" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:src="@mipmap/n4_btn_camera_settings_close" android:layout_alignParentRight="true" />
+    <TextView android:textSize="17.0sp" android:textColor="@color/whole_white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:maxWidth="473.0dip" android:text="@string/control_movement" android:layout_centerHorizontal="true" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/n5_pic_camera_tutorial_motion" />
+    <CheckBox android:textSize="14.0sp" android:textColor="@color/setting_update_firmware_step4_hint" android:id="@id/tutorial_motion_checkbox" android:paddingLeft="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="29.0dip" android:checked="false" android:button="@drawable/bg_checkbox_tutorial" android:text="@string/camera_motion_tutorial_text" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</com.zerozero.hover.view.widget.MotionTutorialView>

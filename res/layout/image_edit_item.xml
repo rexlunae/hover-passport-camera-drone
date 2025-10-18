@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/frame_recycler_view_filter" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="95.0dip" android:layout_marginBottom="64.0dip" android:layout_alignParentBottom="true">
+        <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/image_cut_view_container" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="64.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/image_cut_size" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="14.0dip" android:layout_marginEnd="14.0dip">
+            <com.zerozero.hover.filter.view.MagicImageView android:id="@id/origin_size" android:src="@mipmap/icon_origin_size" style="@style/EditBtnView" />
+            <com.zerozero.hover.filter.view.MagicImageView android:id="@id/size_one_to_one" android:src="@mipmap/icon_size_one_to_one" style="@style/EditBtnView" />
+            <com.zerozero.hover.filter.view.MagicImageView android:id="@id/size_four_to_three" android:src="@mipmap/icon_size_four_to_three" style="@style/EditBtnView" />
+            <com.zerozero.hover.filter.view.MagicImageView android:id="@id/size_sixty_to_nine" android:src="@mipmap/icon_size_sixty_to_nine" style="@style/EditBtnView" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/reset_rotate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/image_cut_size" android:layout_centerHorizontal="true">
+            <com.zerozero.hover.filter.view.MagicTextView android:textSize="16.0sp" android:textColor="#fffff400" android:id="@id/one_key_rotate" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto" />
+            <com.zerozero.hover.filter.view.MagicTextView android:textSize="16.0sp" android:textColor="#fffff400" android:id="@id/one_key_reset" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reset" />
+        </FrameLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/bottom_edit_view" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_alignParentBottom="true">
+        <com.zerozero.hover.filter.view.MagicTextView android:textSize="20.0sp" android:textColor="@color/whole_white" android:id="@id/one_key_cancel" android:visibility="gone" android:layout_width="116.0dip" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_centerVertical="true" style="@style/EditBtnView" />
+        <com.zerozero.hover.filter.view.MagicImageView android:id="@id/image_filter" android:src="@mipmap/icon_filter_btn_selected" android:layout_centerVertical="true" android:layout_marginStart="136.0dip" style="@style/EditBtnView" />
+        <com.zerozero.hover.filter.view.MagicImageView android:id="@id/image_cut" android:src="@mipmap/icon_btn_crop" android:layout_centerVertical="true" android:layout_marginEnd="136.0dip" android:layout_alignParentEnd="true" style="@style/EditBtnView" />
+        <FrameLayout android:id="@id/btn_share_done" android:layout_width="116.0dip" android:layout_height="fill_parent" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/EditBtnView">
+            <com.zerozero.hover.filter.view.MagicTextView android:textSize="20.0sp" android:textColor="@color/whole_white" android:id="@id/edit_share" android:layout_width="116.0dip" android:layout_height="fill_parent" android:text="@string/share" style="@style/EditBtnView" />
+            <com.zerozero.hover.filter.view.MagicTextView android:textSize="20.0sp" android:textColor="@color/whole_white" android:id="@id/edit_done" android:visibility="gone" android:layout_width="116.0dip" android:layout_height="fill_parent" android:text="@string/common_done" style="@style/EditBtnView" />
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

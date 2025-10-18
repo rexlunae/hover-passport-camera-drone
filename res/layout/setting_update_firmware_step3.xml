@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="80.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/setting_update_firmware_step3_image" android:layout_width="170.0dip" android:layout_height="60.0dip" android:src="@mipmap/n5_pic_camera_disconnect" />
+            <TextView android:textSize="17.0sp" android:textColor="#ccffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/setting_update_firmware_step3_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/setting_update_firmware_connect_hover" android:paddingStart="36.0dip" android:paddingEnd="36.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/setting_title_text_color" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="36.0dip" android:text="@string/setting_update_firmware_connect_hover_more" android:fontFamily="sans-serif-light" />
+        </LinearLayout>
+    </FrameLayout>
+    <TextView android:enabled="true" android:id="@id/setting_update_firmware_step3_next" android:text="@string/setting_update_firmware_button_next" style="@style/SettingBottomButtonStyle" />
+</LinearLayout>

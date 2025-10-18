@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_pop_hover_dialog" android:background="@drawable/shape_hover_dialog" android:layout_width="304.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="304.0dip" android:layout_height="114.0dip">
+        <ImageView android:id="@id/img_pop_hover_dialog" android:layout_width="304.0dip" android:layout_height="114.0dip" android:src="@mipmap/n5_pic_home_alerts_default" android:contentDescription="@null" />
+        <ImageView android:layout_gravity="right" android:id="@id/img_hover_dialog_close" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_margin="4.0dip" android:src="@mipmap/n5_icon_home_pop_close" android:contentDescription="@null" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/whole_white" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="304.0dip" android:layout_height="wrap_content">
+        <TextView android:textSize="24.0sp" android:textColor="@color/whole_black" android:layout_gravity="center_horizontal" android:id="@id/txt_pop_hover_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="12.0dip" />
+        <com.zerozero.hover.newui.home.LimitHeightScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_99000000" android:layout_gravity="center_vertical" android:id="@id/txt_pop_hover_dialog_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="6.0sp" />
+        </com.zerozero.hover.newui.home.LimitHeightScrollView>
+        <Button android:textSize="15.0sp" android:id="@id/btn_detail_pop_hover_dialog" android:background="@drawable/black_boeder_btn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginBottom="20.0dip" android:text="查看详情" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/check_layout_pop_hover_dialog" android:visibility="gone" android:layout_width="304.0dip" android:layout_height="42.0dip">
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:background="@color/whole_white" android:layout_width="304.0dip" android:layout_height="40.0dip">
+            <CheckBox android:id="@id/check_box_pop_hover_dialog" android:layout_width="21.0dip" android:layout_height="21.0dip" android:button="@drawable/dismiss_checkbox" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_66000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="不再显示" android:layout_marginStart="6.0dip" />
+        </LinearLayout>
+        <View android:background="@color/color_33000000" android:layout_width="304.0dip" android:layout_height="1.0dip" />
+    </FrameLayout>
+</LinearLayout>

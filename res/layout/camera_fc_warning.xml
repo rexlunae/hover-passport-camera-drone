@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/container_preview_error" android:background="@color/transparent_black_50" android:visibility="gone" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginStart="112.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_camera_fc_warning" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_margin="13.0dip" android:layout_marginTop="9.0dip" android:layout_marginBottom="9.0dip" android:src="@mipmap/n5_icon_camera_error" android:contentDescription="@null" android:layout_marginStart="13.0dip" android:layout_marginEnd="9.0dip" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/whole_white" android:layout_gravity="center_vertical" android:id="@id/txt_preview_error" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:lineSpacingMultiplier="1.2" android:layout_marginEnd="22.0dip" />
+    </LinearLayout>
+</FrameLayout>

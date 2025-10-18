@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/update_firmware_step2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/setting_update_firmware_step2_progress" android:layout_width="@dimen/setting_update_firmware_step_progress_bar_width" android:layout_height="@dimen/progress_bar_height" android:layout_marginTop="88.0dip" android:progressDrawable="@drawable/progress_bar_black" style="?android:attr/progressBarStyleHorizontal" />
+            <TextView android:textSize="17.0sp" android:textColor="@color/whole_white" android:layout_gravity="center_horizontal" android:id="@id/setting_update_firmware_step2_downloading_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="Downloading…0%" />
+        </LinearLayout>
+    </FrameLayout>
+    <TextView android:enabled="false" android:id="@id/setting_update_firmware_step2_next" android:text="@string/setting_update_firmware_button_next" style="@style/SettingBottomButtonStyle" />
+</LinearLayout>

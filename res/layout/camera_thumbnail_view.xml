@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/take_picture_preview" android:background="@drawable/large_photo_preview_border" android:visibility="gone" android:layout_width="129.0dip" android:layout_height="97.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="14.0dip" android:scaleType="centerCrop" android:layout_toRightOf="@id/left_control" />
+    <FrameLayout android:id="@id/container_large_photo_preview" android:background="#cd000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/large_photo_preview" android:background="@drawable/large_photo_preview_border" android:visibility="visible" android:layout_width="442.0dip" android:layout_height="332.0dip" android:scaleType="fitXY" />
+        <ImageView android:layout_gravity="center" android:id="@id/photo_progress_view" android:layout_width="442.0dip" android:layout_height="332.0dip" android:src="@drawable/camera_photo_clip" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/container_large_photo_preview_owner" android:background="#cd000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/large_photo_preview_owner" android:background="@drawable/large_photo_preview_border" android:visibility="visible" android:layout_width="590.0dip" android:layout_height="332.0dip" android:scaleType="fitXY" />
+        <ImageView android:layout_gravity="center" android:id="@id/photo_progress_view_owner" android:layout_width="590.0dip" android:layout_height="332.0dip" android:src="@drawable/camera_photo_clip" />
+    </FrameLayout>
+</merge>

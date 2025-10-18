@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/cover_video_left" android:background="@color/nine_rectangle_left_cover_color" android:layout_width="112.0dip" android:layout_height="fill_parent" android:alpha="0.7" />
+    <LinearLayout android:orientation="vertical" android:id="@id/nine_rectangle_item" android:background="#ff000000" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toEndOf="@id/cover_video_left" android:layout_alignParentEnd="true">
+        <ImageView android:layout_gravity="end" android:id="@id/filter_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="20.0dip" android:src="@mipmap/filter_close" android:layout_marginEnd="16.0dip" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:layout_marginStart="40.0dip">
+            <FrameLayout android:id="@id/frame_effect1" android:layout_width="150.0dip" android:layout_height="84.0dip" android:layout_marginEnd="16.0dip">
+                <com.zerozero.filter.gpuimage.view.RectangleView android:id="@id/image_effect1" android:background="@drawable/nine_rectangle_grid_selected_item" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/whole_white" android:layout_gravity="end|bottom" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nature-1" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/frame_effect2" android:layout_width="150.0dip" android:layout_height="84.0dip" android:layout_marginEnd="16.0dip" android:layout_toEndOf="@id/frame_effect1">
+                <com.zerozero.filter.gpuimage.view.RectangleView android:id="@id/image_effect2" android:background="@drawable/nine_rectangle_grid_selected_item" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/whole_white" android:layout_gravity="end|bottom" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nature-2" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/frame_effect3" android:layout_width="150.0dip" android:layout_height="84.0dip" android:layout_marginEnd="16.0dip" android:layout_toEndOf="@id/frame_effect2">
+                <com.zerozero.filter.gpuimage.view.RectangleView android:id="@id/image_effect3" android:background="@drawable/nine_rectangle_grid_selected_item" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/whole_white" android:layout_gravity="end|bottom" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nature-3" />
+            </FrameLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:layout_marginStart="40.0dip">
+            <FrameLayout android:id="@id/frame_effect4" android:layout_width="150.0dip" android:layout_height="84.0dip" android:layout_marginEnd="16.0dip">
+                <com.zerozero.filter.gpuimage.view.RectangleView android:id="@id/image_effect4" android:background="@drawable/nine_rectangle_grid_selected_item" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/whole_white" android:layout_gravity="end|bottom" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Retro" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/frame_effect5" android:layout_width="150.0dip" android:layout_height="84.0dip" android:layout_marginEnd="16.0dip" android:layout_toEndOf="@id/frame_effect4">
+                <com.zerozero.filter.gpuimage.view.RectangleView android:id="@id/image_effect5" android:background="@drawable/nine_rectangle_grid_selected_item" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/whole_white" android:layout_gravity="end|bottom" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="None" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/frame_effect6" android:layout_width="150.0dip" android:layout_height="84.0dip" android:layout_marginEnd="16.0dip" android:layout_toEndOf="@id/frame_effect5">
+                <com.zerozero.filter.gpuimage.view.RectangleView android:id="@id/image_effect6" android:background="@drawable/nine_rectangle_grid_selected_item" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/whole_white" android:layout_gravity="end|bottom" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fresh" />
+            </FrameLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:layout_marginStart="40.0dip">
+            <FrameLayout android:id="@id/frame_effect7" android:layout_width="150.0dip" android:layout_height="84.0dip" android:layout_marginEnd="16.0dip">
+                <com.zerozero.filter.gpuimage.view.RectangleView android:id="@id/image_effect7" android:background="@drawable/nine_rectangle_grid_selected_item" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/whole_white" android:layout_gravity="end|bottom" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Warm" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/frame_effect8" android:layout_width="150.0dip" android:layout_height="84.0dip" android:layout_marginEnd="16.0dip" android:layout_toEndOf="@id/frame_effect7">
+                <com.zerozero.filter.gpuimage.view.RectangleView android:id="@id/image_effect8" android:background="@drawable/nine_rectangle_grid_selected_item" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/whole_white" android:layout_gravity="end|bottom" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Movie" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/frame_effect9" android:layout_width="150.0dip" android:layout_height="84.0dip" android:layout_marginEnd="16.0dip" android:layout_toEndOf="@id/frame_effect8">
+                <com.zerozero.filter.gpuimage.view.RectangleView android:id="@id/image_effect9" android:background="@drawable/nine_rectangle_grid_selected_item" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/whole_white" android:layout_gravity="end|bottom" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="B&amp;W" />
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

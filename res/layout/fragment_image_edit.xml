@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_image_show" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/layout_frame_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.zz.scissor.PicScissor android:layout_gravity="center" android:id="@id/picture_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <com.zerozero.hover.filter.view.MagicImageView android:id="@id/one_key_beauty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:src="@mipmap/icon_btn_one_key_edit" android:layout_below="@id/layout_frame_view" android:layout_marginEnd="14.0dip" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_filter_loading" android:background="#80000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/image_filtering" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@mipmap/icon_camera_loading" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <include android:id="@id/header_item" android:visibility="gone" layout="@layout/scan_header_item" />
+    <include android:id="@id/image_edit_tab" android:visibility="gone" layout="@layout/image_edit_item" />
+</FrameLayout>

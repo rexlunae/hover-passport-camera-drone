@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="16.0dip" android:textColor="@drawable/btn_setting_bottom_text_color" android:gravity="center" android:id="@id/btn_abort_download" android:background="@drawable/btn_setting_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="12.0dip" android:text="@string/btn_abort_all_download" />
+        <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:paddingLeft="14.0dip" android:paddingRight="7.0dip" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="2.0dip"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </LinearLayout>
+    <include layout="@layout/album_bottom_bar" />
+    <FrameLayout android:id="@id/empty_fl" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/layout_album_empty" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/camera_distance_tip_container" android:background="@drawable/n3_bg_camera_track_tips" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/whole_black" android:layout_gravity="center" android:id="@id/camera_distance_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="@string/camera_tips_move_closer" />
+</FrameLayout>

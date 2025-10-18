@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/video_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center" android:id="@id/layout_surface_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.zerozero.hover.view.player.BaseVideoView android:id="@id/video_player" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentStart="true" app:scalableType="centerCrop" />
+        <ImageView android:id="@id/imgVideo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_alignLeft="@id/video_loader" android:layout_alignTop="@id/video_loader" android:layout_alignRight="@id/video_loader" android:layout_alignBottom="@id/video_loader" />
+        <ImageView android:id="@id/icon_video_play" android:background="@mipmap/video_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_progress_part" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <SeekBar android:id="@id/seekbar" android:paddingLeft="20.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/bg_seekbar" android:minHeight="2.0dip" android:thumb="@drawable/white_dot" />
+        <RelativeLayout android:id="@id/rl_time_part" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="16.0dip">
+            <TextView android:textColor="@color/video_progress_white_color" android:id="@id/tv_time_pass" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00" android:layout_alignParentLeft="true" />
+            <TextView android:textColor="@color/whole_white" android:id="@id/tv_time_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0." android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

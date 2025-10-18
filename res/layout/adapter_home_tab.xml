@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/item" android:layout_width="wrap_content" android:layout_height="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_centerInParent="true">
+            <ImageView android:id="@id/iv_lock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:src="@drawable/selector_scene_lock" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/color_99ffffff" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/manual" />
+        </LinearLayout>
+        <View android:id="@id/line" android:background="@color/whole_white" android:layout_width="0.39999998dip" android:layout_height="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:alpha="0.4" />
+    </RelativeLayout>
+</RelativeLayout>

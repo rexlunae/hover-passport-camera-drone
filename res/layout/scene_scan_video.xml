@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zerozero.hover.view.ImageButton android:id="@id/iv_delete" app:srcCompat="@mipmap/ic_session_delete" style="@style/Activity_Scan_Button" />
+    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <com.zerozero.hover.view.ImageButton android:id="@id/iv_edit" android:layout_width="28.0dip" app:srcCompat="@drawable/icon_media_edit" style="@style/Activity_Scan_Button" />
+    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <com.zerozero.hover.view.ImageButton android:id="@id/iv_share" app:srcCompat="@mipmap/icon_share" style="@style/Activity_Scan_Button" />
+</LinearLayout>

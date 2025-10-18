@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/list_view_control_mode" android:background="@color/whole_black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:drawSelectorOnTop="false" android:divider="@null"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/setting_title_text_color" android:id="@id/tv_control_mode_default" android:paddingBottom="10.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_default_flight_control_mode" android:lineSpacingMultiplier="1.2" android:layout_marginEnd="16.0dip" style="@style/SettingsTitleStyle" />
+</LinearLayout>

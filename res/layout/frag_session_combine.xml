@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:tag="layout/frag_session_combine_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/no_sc" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/tip_text" android:layout_marginBottom="12.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/session_combine_tip_text" />
+        <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginBottom="7.0dip" android:src="@drawable/sc_empty" android:layout_above="@id/tip_text" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:orientation="horizontal" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

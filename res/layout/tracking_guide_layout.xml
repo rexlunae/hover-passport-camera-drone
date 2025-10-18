@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zerozero.hover.view.widget.TrackingGuideView android:id="@id/tracking_guide_container" android:background="@color/transparent_black_loading" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/tracking_guide_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/pic_tracking_guide" />
+    <LinearLayout android:orientation="vertical" android:layout_width="360.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="30.0dip" android:layout_centerHorizontal="true">
+        <TextView android:textSize="20.0sp" android:textColor="@color/whole_white" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/track_guide_view_title" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/whole_white" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/track_guide_view_content" />
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/whole_white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/btn_tracking_guide_know" android:background="@drawable/welcome_button_rec" android:layout_width="160.0dip" android:layout_height="44.0dip" android:text="@string/track_guide_view_known" />
+    </LinearLayout>
+    <ImageView android:id="@id/tracking_guide_finger" android:visibility="gone" android:layout_width="120.0dip" android:layout_height="120.0dip" android:src="@mipmap/pic_tracking_guide_finger" />
+</com.zerozero.hover.view.widget.TrackingGuideView>

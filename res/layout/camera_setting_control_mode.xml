@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/btn_control_classic" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/btn_camera_setting_mode_classic" android:layout_centerHorizontal="true" />
+            <TextView android:enabled="true" android:textSize="11.0sp" android:textColor="@color/whole_white" android:id="@id/btn_control_classic_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-7.0dip" android:text="@string/fly_control_picker_classic" android:layout_below="@id/btn_control_classic" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/btn_control_motion" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/btn_camera_setting_mode_motion" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/whole_white" android:id="@id/btn_control_motion_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-7.0dip" android:text="@string/fly_control_picker_motion" android:layout_below="@id/btn_control_motion" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/btn_control_joystick" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/btn_camera_setting_mode_joystick" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/whole_white" android:id="@id/btn_control_joystick_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-7.0dip" android:text="@string/fly_control_picker_joystick" android:layout_below="@id/btn_control_joystick" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
